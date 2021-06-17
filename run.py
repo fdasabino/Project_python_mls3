@@ -22,7 +22,7 @@ FPS = 60
 VEL = 8
 
 # bullets
-BULLET_VEL = 8
+BULLET_VEL = 15
 MAX_BULLETS = 5
 
 # images + sizes
@@ -44,13 +44,16 @@ NASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(NASA_SPACESHIP_I
 ALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','alien.png'))
 ALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)
 
+# background image
+BACKGROUND = pygame.transform.scale(pygame.image.load(os.path.join('Assets', 'space.jpg')), (WIDTH,HEIGHT))
+
 # drawing function
 def drawing_elements(alien, nasa, nasa_bullets, alien_bullets):
     """
     Draws the elements in the screen.
     PS: it's important to draw the elements on the right order.
     """
-    WIN.fill(GRAY) # background
+    WIN.blit(BACKGROUND, (0, 0)) # background
     pygame.draw.rect(WIN, BLUE, BORDER)
     WIN.blit(NASA_SPACESHIP, (nasa.x, nasa.y)) # nasa
     WIN.blit(ALIEN_SPACESHIP, (alien.x, alien.y)) # alien
@@ -98,11 +101,14 @@ def bullets_handle(nasa_bullets, alien_bullets, nasa, alien):
         if alien.colliderect(bullet):
             pygame.event.post(pygame.event.Event(ALIEN_HIT))
             nasa_bullets.remove(bullet)
-            
+        elif bullet.x > WIDTH:
+            nasa_bullets.remove(bullet)
     for bullet in alien_bullets:
         bullet.x -= BULLET_VEL
         if nasa.colliderect(bullet):
             pygame.event.post(pygame.event.Event(NASA_HIT))
+            alien_bullets.remove(bullet)
+        elif bullet.x < 0:
             alien_bullets.remove(bullet)
 
 # main function
