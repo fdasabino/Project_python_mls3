@@ -1,6 +1,7 @@
 # python code goes here
 import pygame
 import os
+
 pygame.font.init()
 pygame.mixer.init()
 
@@ -42,7 +43,6 @@ TEXT_FONT = pygame.font.SysFont('arial', 50)
 # hit events 
 NASA_HIT = pygame.USEREVENT + 1
 ALIEN_HIT = pygame.USEREVENT + 2
-
 
 # left spaceship
 NASA_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','nasa.png'))
@@ -133,6 +133,9 @@ def bullets_handle(nasa_bullets, alien_bullets, nasa, alien):
 
 # winner function
 def winner(text):
+    """
+    Writes a text with the winner side.
+    """
     write_text = TEXT_FONT.render(text, 1, WHITE)
     WIN.blit(write_text, (WIDTH/2 - write_text.get_width()/2, HEIGHT/2 - write_text.get_height()/2))
     pygame.display.update()

@@ -58,7 +58,7 @@
         "kind": 2,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "def winner(text):\n    write_text = TEXT_FONT.render(text, 1, WHITE)\n    WIN.blit(write_text, (WIDTH/2 - write_text.get_width()/2, HEIGHT/2 - write_text.get_height()/2))\n    pygame.display.update()\n    pygame.time.delay(5000)\n# main function\ndef main():\n    \"\"\"\n    Handles the main loop and the logic of the game.\n    \"\"\"",
+        "peekOfCode": "def winner(text):\n    \"\"\"\n    Writes a text with the winner side.\n    \"\"\"\n    write_text = TEXT_FONT.render(text, 1, WHITE)\n    WIN.blit(write_text, (WIDTH/2 - write_text.get_width()/2, HEIGHT/2 - write_text.get_height()/2))\n    pygame.display.update()\n    pygame.time.delay(5000)\n# main function\ndef main():",
         "detail": "run",
         "documentation": {}
     },
