@@ -31,7 +31,7 @@
         "kind": 2,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "def movement_function_nasa(keys_pressed, nasa):\n        # nasa ship controls\n        keys_pressed = pygame.key.get_pressed()\n        if keys_pressed[pygame.K_a] and nasa.x - VEL > 0: # left\n            nasa.x -= VEL  \n        if keys_pressed[pygame.K_d] and nasa.x + VEL + nasa.width < BORDER.x: # right\n            nasa.x += VEL  \n        if keys_pressed[pygame.K_w] and nasa.y - VEL > 0: # up\n            nasa.y -= VEL  \n        if keys_pressed[pygame.K_s] and nasa.y + VEL + nasa.height < HEIGHT: # down",
+        "peekOfCode": "def movement_function_nasa(keys_pressed, nasa):\n    \"\"\"\n    Defines the keys to move the nasa spaceships on the screen\n    \"\"\"\n    # nasa ship controls\n    keys_pressed = pygame.key.get_pressed()\n    if keys_pressed[pygame.K_a] and nasa.x - VEL > 0: # left\n        nasa.x -= VEL  \n    if keys_pressed[pygame.K_d] and nasa.x + VEL + nasa.width < BORDER.x: # right\n        nasa.x += VEL  ",
         "detail": "run",
         "documentation": {}
     },
@@ -40,7 +40,7 @@
         "kind": 2,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "def movement_function_alien(keys_pressed, alien):\n        # nasa ship controls\n        keys_pressed = pygame.key.get_pressed()\n        if keys_pressed[pygame.K_LEFT] and alien.x - VEL > BORDER.x + BORDER.width: # left\n            alien.x -= VEL  \n        if keys_pressed[pygame.K_RIGHT] and alien.x + VEL + alien.width < WIDTH: # right\n            alien.x += VEL  \n        if keys_pressed[pygame.K_UP] and alien.y - VEL > 0: # up\n            alien.y -= VEL  \n        if keys_pressed[pygame.K_DOWN] and alien.y + VEL + alien.height < HEIGHT - 15: # down",
+        "peekOfCode": "def movement_function_alien(keys_pressed, alien):\n    \"\"\"\n    defines the keys to move the alien spaceships on the screen\n    \"\"\"\n    # nasa ship controls\n    keys_pressed = pygame.key.get_pressed()\n    if keys_pressed[pygame.K_LEFT] and alien.x - VEL > BORDER.x + BORDER.width: # left\n        alien.x -= VEL  \n    if keys_pressed[pygame.K_RIGHT] and alien.x + VEL + alien.width < WIDTH: # right\n        alien.x += VEL  ",
         "detail": "run",
         "documentation": {}
     },
@@ -58,7 +58,7 @@
         "kind": 2,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "def winner(text):\n    write_text = TEXT_FONT.render(text, 1, GRAY)\n    WIN.blit(write_text, (WIDTH/2 - write_text.get_width()/2, HEIGHT/2 - write_text.get_height()/2))\n    pygame.display.update()\n    pygame.time.delay(5000)\n# main function\ndef main():\n    \"\"\"\n    Handles the main loop and the logic of the game.\n    \"\"\"",
+        "peekOfCode": "def winner(text):\n    write_text = TEXT_FONT.render(text, 1, WHITE)\n    WIN.blit(write_text, (WIDTH/2 - write_text.get_width()/2, HEIGHT/2 - write_text.get_height()/2))\n    pygame.display.update()\n    pygame.time.delay(5000)\n# main function\ndef main():\n    \"\"\"\n    Handles the main loop and the logic of the game.\n    \"\"\"",
         "detail": "run",
         "documentation": {}
     },
@@ -76,7 +76,16 @@
         "kind": 5,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "WIN = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Nasa Vs Aliens!\")\n# colours for the window\nGRAY = (102, 102, 102)\nBLUE = (0, 119, 204)\nRED = (255, 0, 0)\nGREEN = (0, 255, 0)\n# frames per second\nFPS = 60\n# velocity",
+        "peekOfCode": "WIN = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Nasa Vs Aliens!\")\n# colours for the window\nWHITE = (255, 255, 255)\nGRAY = (102, 102, 102)\nBLUE = (0, 119, 204)\nRED = (255, 0, 0)\nGREEN = (0, 255, 0)\n# frames per second\nFPS = 60",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "WHITE",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "WHITE = (255, 255, 255)\nGRAY = (102, 102, 102)\nBLUE = (0, 119, 204)\nRED = (255, 0, 0)\nGREEN = (0, 255, 0)\n# frames per second\nFPS = 60\n# velocity\nVEL = 8\n# bullets",
         "detail": "run",
         "documentation": {}
     },

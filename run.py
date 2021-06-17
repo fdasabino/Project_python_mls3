@@ -10,6 +10,7 @@ WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Nasa Vs Aliens!")
 
 # colours for the window
+WHITE = (255, 255, 255)
 GRAY = (102, 102, 102)
 BLUE = (0, 119, 204)
 RED = (255, 0, 0)
@@ -79,29 +80,35 @@ def drawing_elements(alien, nasa, nasa_bullets, alien_bullets, alien_health, nas
     
 # movement function nasa ship
 def movement_function_nasa(keys_pressed, nasa):
-        # nasa ship controls
-        keys_pressed = pygame.key.get_pressed()
-        if keys_pressed[pygame.K_a] and nasa.x - VEL > 0: # left
-            nasa.x -= VEL  
-        if keys_pressed[pygame.K_d] and nasa.x + VEL + nasa.width < BORDER.x: # right
-            nasa.x += VEL  
-        if keys_pressed[pygame.K_w] and nasa.y - VEL > 0: # up
-            nasa.y -= VEL  
-        if keys_pressed[pygame.K_s] and nasa.y + VEL + nasa.height < HEIGHT: # down
-            nasa.y += VEL  
+    """
+    Defines the keys to move the nasa spaceships on the screen
+    """
+    # nasa ship controls
+    keys_pressed = pygame.key.get_pressed()
+    if keys_pressed[pygame.K_a] and nasa.x - VEL > 0: # left
+        nasa.x -= VEL  
+    if keys_pressed[pygame.K_d] and nasa.x + VEL + nasa.width < BORDER.x: # right
+        nasa.x += VEL  
+    if keys_pressed[pygame.K_w] and nasa.y - VEL > 0: # up
+        nasa.y -= VEL  
+    if keys_pressed[pygame.K_s] and nasa.y + VEL + nasa.height < HEIGHT: # down
+        nasa.y += VEL  
 
 # movement function alien ship
 def movement_function_alien(keys_pressed, alien):
-        # nasa ship controls
-        keys_pressed = pygame.key.get_pressed()
-        if keys_pressed[pygame.K_LEFT] and alien.x - VEL > BORDER.x + BORDER.width: # left
-            alien.x -= VEL  
-        if keys_pressed[pygame.K_RIGHT] and alien.x + VEL + alien.width < WIDTH: # right
-            alien.x += VEL  
-        if keys_pressed[pygame.K_UP] and alien.y - VEL > 0: # up
-            alien.y -= VEL  
-        if keys_pressed[pygame.K_DOWN] and alien.y + VEL + alien.height < HEIGHT - 15: # down
-            alien.y += VEL  
+    """
+    defines the keys to move the alien spaceships on the screen
+    """
+    # nasa ship controls
+    keys_pressed = pygame.key.get_pressed()
+    if keys_pressed[pygame.K_LEFT] and alien.x - VEL > BORDER.x + BORDER.width: # left
+        alien.x -= VEL  
+    if keys_pressed[pygame.K_RIGHT] and alien.x + VEL + alien.width < WIDTH: # right
+        alien.x += VEL  
+    if keys_pressed[pygame.K_UP] and alien.y - VEL > 0: # up
+        alien.y -= VEL  
+    if keys_pressed[pygame.K_DOWN] and alien.y + VEL + alien.height < HEIGHT - 15: # down
+        alien.y += VEL  
 
 # bullets function
 def bullets_handle(nasa_bullets, alien_bullets, nasa, alien):
@@ -126,7 +133,7 @@ def bullets_handle(nasa_bullets, alien_bullets, nasa, alien):
 
 # winner function
 def winner(text):
-    write_text = TEXT_FONT.render(text, 1, GRAY)
+    write_text = TEXT_FONT.render(text, 1, WHITE)
     WIN.blit(write_text, (WIDTH/2 - write_text.get_width()/2, HEIGHT/2 - write_text.get_height()/2))
     pygame.display.update()
     pygame.time.delay(5000)
@@ -174,12 +181,12 @@ def main():
                 
         winner_text = ""
         if nasa_health <= 0:
-            winner_text =  "!ALIEN SIDE WINS!"
+            winner_text =  "ALIEN SHIP WINS!"
         if alien_health <= 0:
-            winner_text = "!NASA SIDE WINS!"
+            winner_text = "NASA SHIP WINS!"
         if winner_text != "":
-           winner(winner_text)
-           break
+            winner(winner_text)
+            break
         
         
         keys_pressed = pygame.key.get_pressed()
@@ -188,7 +195,7 @@ def main():
         
         bullets_handle(nasa_bullets, alien_bullets, nasa, alien)
         
-        drawing_elements(alien, nasa, alien_bullets, nasa_bullets, alien_health, nasa_health)
+        drawing_elements(alien, nasa, nasa_bullets, alien_bullets, alien_health, nasa_health)
         
     
     main()
