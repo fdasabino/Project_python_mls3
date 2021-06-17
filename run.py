@@ -49,26 +49,26 @@ def drawing_elements(alien, nasa):
 def movement_function_nasa(keys_pressed, nasa):
         # nasa ship controls
         keys_pressed = pygame.key.get_pressed()
-        if keys_pressed[pygame.K_a]: # left
+        if keys_pressed[pygame.K_a] and nasa.x - VEL > 0: # left
             nasa.x -= VEL  
-        if keys_pressed[pygame.K_d]: # right
+        if keys_pressed[pygame.K_d] and nasa.x + VEL + nasa.width < BORDER.x: # right
             nasa.x += VEL  
-        if keys_pressed[pygame.K_w]: # up
+        if keys_pressed[pygame.K_w] and nasa.y - VEL > 0: # up
             nasa.y -= VEL  
-        if keys_pressed[pygame.K_s]: # down
+        if keys_pressed[pygame.K_s] and nasa.y + VEL + nasa.height < HEIGHT: # down
             nasa.y += VEL  
 
 # movement function alien ship
 def movement_function_alien(keys_pressed, alien):
         # nasa ship controls
         keys_pressed = pygame.key.get_pressed()
-        if keys_pressed[pygame.K_LEFT]: # left
+        if keys_pressed[pygame.K_LEFT] and alien.x - VEL > BORDER.x + BORDER.width: # left
             alien.x -= VEL  
-        if keys_pressed[pygame.K_RIGHT]: # right
+        if keys_pressed[pygame.K_RIGHT] and alien.x + VEL + alien.width < WIDTH: # right
             alien.x += VEL  
-        if keys_pressed[pygame.K_UP]: # up
+        if keys_pressed[pygame.K_UP] and alien.y - VEL > 0: # up
             alien.y -= VEL  
-        if keys_pressed[pygame.K_DOWN]: # down
+        if keys_pressed[pygame.K_DOWN] and alien.y + VEL + alien.height < HEIGHT - 15: # down
             alien.y += VEL  
             
 
