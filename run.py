@@ -102,7 +102,7 @@ def bullets_handle(nasa_bullets, alien_bullets, nasa, alien):
         bullet.x -= BULLET_VEL
         if nasa.colliderect(bullet):
             pygame.event.post(pygame.event.Event(NASA_HIT))
-            nasa_bullets.remove(bullet)
+            alien_bullets.remove(bullet)
 
 # main function
 def main():
