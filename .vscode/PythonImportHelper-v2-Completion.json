@@ -22,7 +22,25 @@
         "kind": 2,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "def drawing_elements():\n    \"\"\"\n    Draws the elements in the screen.\n    PS: it's important to draw the elements on the right order.\n    \"\"\"\n    WIN.fill(GRAY) # background\n    WIN.blit(NASA_SPACESHIP, (300, 300)) # nasa\n    WIN.blit(ALIEN_SPACESHIP, (600, 300)) # alien\n    pygame.display.update()\n# main function",
+        "peekOfCode": "def drawing_elements(alien, nasa):\n    \"\"\"\n    Draws the elements in the screen.\n    PS: it's important to draw the elements on the right order.\n    \"\"\"\n    WIN.fill(GRAY) # background\n    pygame.draw.rect(WIN, BLUE, BORDER)\n    WIN.blit(NASA_SPACESHIP, (nasa.x, nasa.y)) # nasa\n    WIN.blit(ALIEN_SPACESHIP, (alien.x, alien.y)) # alien\n    pygame.display.update()",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "movement_function_nasa",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def movement_function_nasa(keys_pressed, nasa):\n        # nasa ship controls\n        keys_pressed = pygame.key.get_pressed()\n        if keys_pressed[pygame.K_a]: # left\n            nasa.x -= VEL  \n        if keys_pressed[pygame.K_d]: # right\n            nasa.x += VEL  \n        if keys_pressed[pygame.K_w]: # up\n            nasa.y -= VEL  \n        if keys_pressed[pygame.K_s]: # down",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "movement_function_alien",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def movement_function_alien(keys_pressed, alien):\n        # nasa ship controls\n        keys_pressed = pygame.key.get_pressed()\n        if keys_pressed[pygame.K_LEFT]: # left\n            alien.x -= VEL  \n        if keys_pressed[pygame.K_RIGHT]: # right\n            alien.x += VEL  \n        if keys_pressed[pygame.K_UP]: # up\n            alien.y -= VEL  \n        if keys_pressed[pygame.K_DOWN]: # down",
         "detail": "run",
         "documentation": {}
     },
@@ -31,7 +49,7 @@
         "kind": 2,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "def main():\n    \"\"\"\n    Handles the main loop and the logic of the game.\n    \"\"\"\n    clock = pygame.time.Clock()\n    run = True\n    while run:\n        clock.tick(FPS)\n        for event in pygame.event.get():\n            if event.type == pygame.QUIT:",
+        "peekOfCode": "def main():\n    \"\"\"\n    Handles the main loop and the logic of the game.\n    \"\"\"\n    nasa = pygame.Rect(100, 300, SHIPS_WIDTH, SHIPS_HEIGHT)\n    alien = pygame.Rect(700, 300, SHIPS_WIDTH, SHIPS_HEIGHT)\n    clock = pygame.time.Clock()\n    run = True\n    while run:\n        clock.tick(FPS)",
         "detail": "run",
         "documentation": {}
     },
@@ -40,7 +58,7 @@
         "kind": 5,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "WIN = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Nasa Vs Aliens!\")\n# colours for the window\nGRAY = (102, 102, 102)\n# frames per second\nFPS = 60\n# images + sizes\nSHIPS_WIDTH, SHIPS_HEIGHT = 80, 80\n# left spaceship\nNASA_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','nasa.png'))",
+        "peekOfCode": "WIN = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Nasa Vs Aliens!\")\n# colours for the window\nGRAY = (102, 102, 102)\nBLUE = (0, 119, 204)\n# frames per second\nFPS = 60\n# velocity\nVEL = 8\n# images + sizes",
         "detail": "run",
         "documentation": {}
     },
@@ -49,7 +67,16 @@
         "kind": 5,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "GRAY = (102, 102, 102)\n# frames per second\nFPS = 60\n# images + sizes\nSHIPS_WIDTH, SHIPS_HEIGHT = 80, 80\n# left spaceship\nNASA_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','nasa.png'))\nNASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(NASA_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 270)\n# right spaceship\nALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','alien.png'))",
+        "peekOfCode": "GRAY = (102, 102, 102)\nBLUE = (0, 119, 204)\n# frames per second\nFPS = 60\n# velocity\nVEL = 8\n# images + sizes\nSHIPS_WIDTH, SHIPS_HEIGHT = 80, 80\n# screen middle division\nBORDER = pygame.Rect(WIDTH/2 - 3, 0, 6, HEIGHT)",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "BLUE",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "BLUE = (0, 119, 204)\n# frames per second\nFPS = 60\n# velocity\nVEL = 8\n# images + sizes\nSHIPS_WIDTH, SHIPS_HEIGHT = 80, 80\n# screen middle division\nBORDER = pygame.Rect(WIDTH/2 - 3, 0, 6, HEIGHT)\n# left spaceship",
         "detail": "run",
         "documentation": {}
     },
@@ -58,7 +85,25 @@
         "kind": 5,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "FPS = 60\n# images + sizes\nSHIPS_WIDTH, SHIPS_HEIGHT = 80, 80\n# left spaceship\nNASA_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','nasa.png'))\nNASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(NASA_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 270)\n# right spaceship\nALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','alien.png'))\nALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)\n# drawing function",
+        "peekOfCode": "FPS = 60\n# velocity\nVEL = 8\n# images + sizes\nSHIPS_WIDTH, SHIPS_HEIGHT = 80, 80\n# screen middle division\nBORDER = pygame.Rect(WIDTH/2 - 3, 0, 6, HEIGHT)\n# left spaceship\nNASA_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','nasa.png'))\nNASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(NASA_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 270)",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "VEL",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "VEL = 8\n# images + sizes\nSHIPS_WIDTH, SHIPS_HEIGHT = 80, 80\n# screen middle division\nBORDER = pygame.Rect(WIDTH/2 - 3, 0, 6, HEIGHT)\n# left spaceship\nNASA_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','nasa.png'))\nNASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(NASA_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 270)\n# right spaceship\nALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','alien.png'))",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "BORDER",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "BORDER = pygame.Rect(WIDTH/2 - 3, 0, 6, HEIGHT)\n# left spaceship\nNASA_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','nasa.png'))\nNASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(NASA_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 270)\n# right spaceship\nALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','alien.png'))\nALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)\n# drawing function\ndef drawing_elements(alien, nasa):\n    \"\"\"",
         "detail": "run",
         "documentation": {}
     },
@@ -67,7 +112,7 @@
         "kind": 5,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "NASA_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','nasa.png'))\nNASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(NASA_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 270)\n# right spaceship\nALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','alien.png'))\nALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)\n# drawing function\ndef drawing_elements():\n    \"\"\"\n    Draws the elements in the screen.\n    PS: it's important to draw the elements on the right order.",
+        "peekOfCode": "NASA_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','nasa.png'))\nNASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(NASA_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 270)\n# right spaceship\nALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','alien.png'))\nALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)\n# drawing function\ndef drawing_elements(alien, nasa):\n    \"\"\"\n    Draws the elements in the screen.\n    PS: it's important to draw the elements on the right order.",
         "detail": "run",
         "documentation": {}
     },
@@ -76,7 +121,7 @@
         "kind": 5,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "NASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(NASA_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 270)\n# right spaceship\nALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','alien.png'))\nALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)\n# drawing function\ndef drawing_elements():\n    \"\"\"\n    Draws the elements in the screen.\n    PS: it's important to draw the elements on the right order.\n    \"\"\"",
+        "peekOfCode": "NASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(NASA_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 270)\n# right spaceship\nALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','alien.png'))\nALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)\n# drawing function\ndef drawing_elements(alien, nasa):\n    \"\"\"\n    Draws the elements in the screen.\n    PS: it's important to draw the elements on the right order.\n    \"\"\"",
         "detail": "run",
         "documentation": {}
     },
@@ -85,7 +130,7 @@
         "kind": 5,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "ALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','alien.png'))\nALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)\n# drawing function\ndef drawing_elements():\n    \"\"\"\n    Draws the elements in the screen.\n    PS: it's important to draw the elements on the right order.\n    \"\"\"\n    WIN.fill(GRAY) # background\n    WIN.blit(NASA_SPACESHIP, (300, 300)) # nasa",
+        "peekOfCode": "ALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','alien.png'))\nALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)\n# drawing function\ndef drawing_elements(alien, nasa):\n    \"\"\"\n    Draws the elements in the screen.\n    PS: it's important to draw the elements on the right order.\n    \"\"\"\n    WIN.fill(GRAY) # background\n    pygame.draw.rect(WIN, BLUE, BORDER)",
         "detail": "run",
         "documentation": {}
     },
@@ -94,7 +139,7 @@
         "kind": 5,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "ALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)\n# drawing function\ndef drawing_elements():\n    \"\"\"\n    Draws the elements in the screen.\n    PS: it's important to draw the elements on the right order.\n    \"\"\"\n    WIN.fill(GRAY) # background\n    WIN.blit(NASA_SPACESHIP, (300, 300)) # nasa\n    WIN.blit(ALIEN_SPACESHIP, (600, 300)) # alien",
+        "peekOfCode": "ALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)\n# drawing function\ndef drawing_elements(alien, nasa):\n    \"\"\"\n    Draws the elements in the screen.\n    PS: it's important to draw the elements on the right order.\n    \"\"\"\n    WIN.fill(GRAY) # background\n    pygame.draw.rect(WIN, BLUE, BORDER)\n    WIN.blit(NASA_SPACESHIP, (nasa.x, nasa.y)) # nasa",
         "detail": "run",
         "documentation": {}
     }
