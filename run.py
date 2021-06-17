@@ -31,6 +31,10 @@ SHIPS_WIDTH, SHIPS_HEIGHT = 80, 80
 # screen middle division
 BORDER = pygame.Rect(WIDTH//2 - 3, 0, 6, HEIGHT)
 
+# bullets sound
+SOUND_HIT = pygame.mixer.Sound(os.path.join('Assets', 'hit_sound.mp3'))
+SOUND_GUN = pygame.mixer.Sound(os.path.join('Assets', 'laser_gun.mp3'))
+
 # texts import
 TEXT_FONT = pygame.font.SysFont('arial', 50)
 
@@ -64,8 +68,6 @@ def drawing_elements(alien, nasa, nasa_bullets, alien_bullets, alien_health, nas
     WIN.blit(alien_health_text, (WIDTH - alien_health_text.get_width()- 10, 10))
     WIN.blit(NASA_SPACESHIP, (nasa.x, nasa.y)) # nasa
     WIN.blit(ALIEN_SPACESHIP, (alien.x, alien.y)) # alien
-    
-    
     
     for bullet in nasa_bullets:
         pygame.draw.rect(WIN, GREEN, bullet)
@@ -113,6 +115,7 @@ def bullets_handle(nasa_bullets, alien_bullets, nasa, alien):
             nasa_bullets.remove(bullet)
         elif bullet.x > WIDTH:
             nasa_bullets.remove(bullet)
+    
     for bullet in alien_bullets:
         bullet.x -= BULLET_VEL
         if nasa.colliderect(bullet):
@@ -120,6 +123,13 @@ def bullets_handle(nasa_bullets, alien_bullets, nasa, alien):
             alien_bullets.remove(bullet)
         elif bullet.x < 0:
             alien_bullets.remove(bullet)
+
+# winner function
+def winner(text):
+    write_text = TEXT_FONT.render(text, 1, GRAY)
+    WIN.blit(write_text, (WIDTH/2 - write_text.get_width()/2, HEIGHT/2 - write_text.get_height()/2))
+    pygame.display.update()
+    pygame.time.delay(5000)
 
 # main function
 def main():
@@ -142,30 +152,34 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 run = False
-        
+                pygame.quit()
         
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_LCTRL and len(nasa_bullets) < MAX_BULLETS: 
                     bullet = pygame.Rect(nasa.x + nasa.width, nasa.y + nasa.height//2 - 2, 10, 5)
                     nasa_bullets.append(bullet)
+                    SOUND_GUN.play()
                     
                 if event.key == pygame.K_RCTRL and len(alien_bullets) < MAX_BULLETS:
                     bullet = pygame.Rect(alien.x, alien.y + alien.height//2 - 2, 10, 5)
                     alien_bullets.append(bullet)
-
+                    SOUND_GUN.play()
+                    
             if event.type == NASA_HIT:
                 nasa_health -= 1
-                
+                SOUND_HIT.play()
             if event.type == ALIEN_HIT:
                 alien_health -= 1
-        
+                SOUND_HIT.play()
+                
         winner_text = ""
         if nasa_health <= 0:
             winner_text =  "!ALIEN SIDE WINS!"
         if alien_health <= 0:
             winner_text = "!NASA SIDE WINS!"
         if winner_text != "":
-            pass    
+           winner(winner_text)
+           break
         
         
         keys_pressed = pygame.key.get_pressed()
@@ -176,7 +190,8 @@ def main():
         
         drawing_elements(alien, nasa, alien_bullets, nasa_bullets, alien_health, nasa_health)
         
-    pygame.quit()
+    
+    main()
 
 if __name__ == '__main__':
     main()
