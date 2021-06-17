@@ -18,11 +18,20 @@
         "documentation": {}
     },
     {
+        "label": "drawing_elements",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def drawing_elements():\n    WIN.fill(GRAY)\n    pygame.display.update()\n# main function\ndef main():\n    \"\"\"\n    Handles the main loop and the logic of the game.\n    \"\"\"\n    clock = pygame.time.Clock()\n    run = True",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
         "label": "main",
         "kind": 2,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "def main():\n    \"\"\"\n    Handles the main loop and the logic of the game.\n    \"\"\"\n    run = True\n    while run:\n        for event in pygame.event.get():\n            if event.type == pygame.QUIT:\n                run = False\n        WIN.fill(GRAY)",
+        "peekOfCode": "def main():\n    \"\"\"\n    Handles the main loop and the logic of the game.\n    \"\"\"\n    clock = pygame.time.Clock()\n    run = True\n    while run:\n        clock.tick(FPS)\n        for event in pygame.event.get():\n            if event.type == pygame.QUIT:",
         "detail": "run",
         "documentation": {}
     },
@@ -31,7 +40,7 @@
         "kind": 5,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "WIN = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Aliens Vs Nasa!\")\nGRAY = (102, 102, 102)\n# main function\ndef main():\n    \"\"\"\n    Handles the main loop and the logic of the game.\n    \"\"\"\n    run = True\n    while run:",
+        "peekOfCode": "WIN = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Aliens Vs Nasa!\")\n# colours for the window\nGRAY = (102, 102, 102)\n# frames per second\nFPS = 60\n# drawing function\ndef drawing_elements():\n    WIN.fill(GRAY)\n    pygame.display.update()",
         "detail": "run",
         "documentation": {}
     },
@@ -40,7 +49,16 @@
         "kind": 5,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "GRAY = (102, 102, 102)\n# main function\ndef main():\n    \"\"\"\n    Handles the main loop and the logic of the game.\n    \"\"\"\n    run = True\n    while run:\n        for event in pygame.event.get():\n            if event.type == pygame.QUIT:",
+        "peekOfCode": "GRAY = (102, 102, 102)\n# frames per second\nFPS = 60\n# drawing function\ndef drawing_elements():\n    WIN.fill(GRAY)\n    pygame.display.update()\n# main function\ndef main():\n    \"\"\"",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "FPS",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "FPS = 60\n# drawing function\ndef drawing_elements():\n    WIN.fill(GRAY)\n    pygame.display.update()\n# main function\ndef main():\n    \"\"\"\n    Handles the main loop and the logic of the game.\n    \"\"\"",
         "detail": "run",
         "documentation": {}
     }
