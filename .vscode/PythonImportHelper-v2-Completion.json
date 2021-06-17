@@ -1,0 +1,47 @@
+[
+    {
+        "label": "pygame",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pygame",
+        "description": "pygame",
+        "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def main():\n    \"\"\"\n    Handles the main loop and the logic of the game.\n    \"\"\"\n    run = True\n    while run:\n        for event in pygame.event.get():\n            if event.type == pygame.QUIT:\n                run = False\n        WIN.fill(GRAY)",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "WIN",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "WIN = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Aliens Vs Nasa!\")\nGRAY = (102, 102, 102)\n# main function\ndef main():\n    \"\"\"\n    Handles the main loop and the logic of the game.\n    \"\"\"\n    run = True\n    while run:",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "GRAY",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "GRAY = (102, 102, 102)\n# main function\ndef main():\n    \"\"\"\n    Handles the main loop and the logic of the game.\n    \"\"\"\n    run = True\n    while run:\n        for event in pygame.event.get():\n            if event.type == pygame.QUIT:",
+        "detail": "run",
+        "documentation": {}
+    }
+]
