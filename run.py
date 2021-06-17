@@ -54,7 +54,6 @@ def drawing_elements(alien, nasa, nasa_bullets, alien_bullets):
     pygame.draw.rect(WIN, BLUE, BORDER)
     WIN.blit(NASA_SPACESHIP, (nasa.x, nasa.y)) # nasa
     WIN.blit(ALIEN_SPACESHIP, (alien.x, alien.y)) # alien
-    pygame.display.update()
     
     for bullet in nasa_bullets:
         pygame.draw.rect(WIN, GREEN, bullet)
@@ -62,6 +61,8 @@ def drawing_elements(alien, nasa, nasa_bullets, alien_bullets):
     for bullet in alien_bullets:
         pygame.draw.rect(WIN, RED, bullet)
 
+    pygame.display.update()
+    
 # movement function nasa ship
 def movement_function_nasa(keys_pressed, nasa):
         # nasa ship controls

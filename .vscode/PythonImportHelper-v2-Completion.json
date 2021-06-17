@@ -22,7 +22,7 @@
         "kind": 2,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "def drawing_elements(alien, nasa, nasa_bullets, alien_bullets):\n    \"\"\"\n    Draws the elements in the screen.\n    PS: it's important to draw the elements on the right order.\n    \"\"\"\n    WIN.fill(GRAY) # background\n    pygame.draw.rect(WIN, BLUE, BORDER)\n    WIN.blit(NASA_SPACESHIP, (nasa.x, nasa.y)) # nasa\n    WIN.blit(ALIEN_SPACESHIP, (alien.x, alien.y)) # alien\n    pygame.display.update()",
+        "peekOfCode": "def drawing_elements(alien, nasa, nasa_bullets, alien_bullets):\n    \"\"\"\n    Draws the elements in the screen.\n    PS: it's important to draw the elements on the right order.\n    \"\"\"\n    WIN.fill(GRAY) # background\n    pygame.draw.rect(WIN, BLUE, BORDER)\n    WIN.blit(NASA_SPACESHIP, (nasa.x, nasa.y)) # nasa\n    WIN.blit(ALIEN_SPACESHIP, (alien.x, alien.y)) # alien\n    for bullet in nasa_bullets:",
         "detail": "run",
         "documentation": {}
     },
