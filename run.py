@@ -31,6 +31,9 @@ SHIPS_WIDTH, SHIPS_HEIGHT = 80, 80
 # screen middle division
 BORDER = pygame.Rect(WIDTH//2 - 3, 0, 6, HEIGHT)
 
+# texts import
+TEXT_FONT = pygame.font.SysFont('arial', 50)
+
 # hit events 
 NASA_HIT = pygame.USEREVENT + 1
 ALIEN_HIT = pygame.USEREVENT + 2
@@ -48,15 +51,21 @@ ALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(ALIEN_SPACESHIP
 BACKGROUND = pygame.transform.scale(pygame.image.load(os.path.join('Assets', 'space.jpg')), (WIDTH,HEIGHT))
 
 # drawing function
-def drawing_elements(alien, nasa, nasa_bullets, alien_bullets):
+def drawing_elements(alien, nasa, nasa_bullets, alien_bullets, alien_health, nasa_health):
     """
     Draws the elements in the screen.
     PS: it's important to draw the elements on the right order.
     """
     WIN.blit(BACKGROUND, (0, 0)) # background
     pygame.draw.rect(WIN, BLUE, BORDER)
+    nasa_health_text = TEXT_FONT.render("Health: " + str(nasa_health), 1, GREEN) # health status
+    alien_health_text = TEXT_FONT.render("Health: " + str(alien_health), 1, RED) # health status   
+    WIN.blit(nasa_health_text, (10, 10))
+    WIN.blit(alien_health_text, (WIDTH - alien_health_text.get_width()- 10, 10))
     WIN.blit(NASA_SPACESHIP, (nasa.x, nasa.y)) # nasa
     WIN.blit(ALIEN_SPACESHIP, (alien.x, alien.y)) # alien
+    
+    
     
     for bullet in nasa_bullets:
         pygame.draw.rect(WIN, GREEN, bullet)
@@ -91,6 +100,7 @@ def movement_function_alien(keys_pressed, alien):
             alien.y -= VEL  
         if keys_pressed[pygame.K_DOWN] and alien.y + VEL + alien.height < HEIGHT - 15: # down
             alien.y += VEL  
+
 # bullets function
 def bullets_handle(nasa_bullets, alien_bullets, nasa, alien):
     """
@@ -122,6 +132,9 @@ def main():
     nasa_bullets = []
     alien_bullets = []
     
+    nasa_health = 10
+    alien_health = 10
+    
     clock = pygame.time.Clock()
     run = True
     while run:
@@ -140,13 +153,28 @@ def main():
                     bullet = pygame.Rect(alien.x, alien.y + alien.height//2 - 2, 10, 5)
                     alien_bullets.append(bullet)
 
+            if event.type == NASA_HIT:
+                nasa_health -= 1
+                
+            if event.type == ALIEN_HIT:
+                alien_health -= 1
+        
+        winner_text = ""
+        if nasa_health <= 0:
+            winner_text =  "!ALIEN SIDE WINS!"
+        if alien_health <= 0:
+            winner_text = "!NASA SIDE WINS!"
+        if winner_text != "":
+            pass    
+        
+        
         keys_pressed = pygame.key.get_pressed()
         movement_function_nasa(keys_pressed, nasa)
         movement_function_alien(keys_pressed, alien)
         
         bullets_handle(nasa_bullets, alien_bullets, nasa, alien)
         
-        drawing_elements(alien, nasa, nasa_bullets, alien_bullets)
+        drawing_elements(alien, nasa, alien_bullets, nasa_bullets, alien_health, nasa_health)
         
     pygame.quit()
 
