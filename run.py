@@ -48,14 +48,17 @@ ALIEN_HIT = pygame.USEREVENT + 2
 
 # left spaceship
 NASA_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets', 'nasa.png'))
-NASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(NASA_SPACESHIP_IMG,(SHIPS_WIDTH, SHIPS_HEIGHT)), 270)
+NASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale
+                                         (NASA_SPACESHIP_IMG,(SHIPS_WIDTH, SHIPS_HEIGHT)), 270)
 
 # right spaceship
 ALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets', 'alien.png'))
-ALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)
+ALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale
+                                          (ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)
 
 # background image
-BACKGROUND = pygame.transform.scale(pygame.image.load(os.path.join('Assets', 'space.jpg')), (WIDTH,HEIGHT))
+BACKGROUND = pygame.transform.scale(pygame.image.load(os.path.join
+                                                      ('Assets', 'space.jpg')), (WIDTH,HEIGHT))
 
 # drawing function
 def drawing_elements(alien, nasa, nasa_bullets, alien_bullets, alien_health, nasa_health):
@@ -66,20 +69,20 @@ def drawing_elements(alien, nasa, nasa_bullets, alien_bullets, alien_health, nas
     WIN.blit(BACKGROUND, (0, 0)) # background
     pygame.draw.rect(WIN, BLUE, BORDER)
     nasa_health_text = TEXT_FONT.render("Health: " + str(nasa_health), 1, GREEN) # health status
-    alien_health_text = TEXT_FONT.render("Health: " + str(alien_health), 1, RED) # health status   
+    alien_health_text = TEXT_FONT.render("Health: " + str(alien_health), 1, RED) # health status
     WIN.blit(nasa_health_text, (10, 10))
     WIN.blit(alien_health_text, (WIDTH - alien_health_text.get_width()- 10, 10))
     WIN.blit(NASA_SPACESHIP, (nasa.x, nasa.y)) # nasa
     WIN.blit(ALIEN_SPACESHIP, (alien.x, alien.y)) # alien
-    
+
     for bullet in nasa_bullets:
         pygame.draw.rect(WIN, GREEN, bullet)
-        
+
     for bullet in alien_bullets:
         pygame.draw.rect(WIN, RED, bullet)
 
     pygame.display.update()
-    
+
 # movement function nasa ship
 def movement_function_nasa(keys_pressed, nasa):
     """
@@ -88,13 +91,13 @@ def movement_function_nasa(keys_pressed, nasa):
     # nasa ship controls
     keys_pressed = pygame.key.get_pressed()
     if keys_pressed[pygame.K_a] and nasa.x - VEL > 0: # left
-        nasa.x -= VEL  
+        nasa.x -= VEL
     if keys_pressed[pygame.K_d] and nasa.x + VEL + nasa.width < BORDER.x: # right
-        nasa.x += VEL  
+        nasa.x += VEL
     if keys_pressed[pygame.K_w] and nasa.y - VEL > 0: # up
-        nasa.y -= VEL  
+        nasa.y -= VEL
     if keys_pressed[pygame.K_s] and nasa.y + VEL + nasa.height < HEIGHT: # down
-        nasa.y += VEL  
+        nasa.y += VEL
 
 # movement function alien ship
 def movement_function_alien(keys_pressed, alien):
@@ -104,13 +107,13 @@ def movement_function_alien(keys_pressed, alien):
     # nasa ship controls
     keys_pressed = pygame.key.get_pressed()
     if keys_pressed[pygame.K_LEFT] and alien.x - VEL > BORDER.x + BORDER.width: # left
-        alien.x -= VEL  
+        alien.x -= VEL
     if keys_pressed[pygame.K_RIGHT] and alien.x + VEL + alien.width < WIDTH: # right
-        alien.x += VEL  
+        alien.x += VEL
     if keys_pressed[pygame.K_UP] and alien.y - VEL > 0: # up
-        alien.y -= VEL  
+        alien.y -= VEL
     if keys_pressed[pygame.K_DOWN] and alien.y + VEL + alien.height < HEIGHT - 15: # down
-        alien.y += VEL  
+        alien.y += VEL
 
 # bullets function
 def bullets_handle(nasa_bullets, alien_bullets, nasa, alien):
@@ -124,7 +127,7 @@ def bullets_handle(nasa_bullets, alien_bullets, nasa, alien):
             nasa_bullets.remove(bullet)
         elif bullet.x > WIDTH:
             nasa_bullets.remove(bullet)
-    
+
     for bullet in alien_bullets:
         bullet.x -= BULLET_VEL
         if nasa.colliderect(bullet):
@@ -150,13 +153,13 @@ def main():
     """
     nasa = pygame.Rect(100, 300, SHIPS_WIDTH, SHIPS_HEIGHT)
     alien = pygame.Rect(700, 300, SHIPS_WIDTH, SHIPS_HEIGHT)
-    
+
     nasa_bullets = []
     alien_bullets = []
-    
+
     nasa_health = 10
     alien_health = 10
-    
+
     clock = pygame.time.Clock()
     run = True
     while run:
@@ -165,25 +168,25 @@ def main():
             if event.type == pygame.QUIT:
                 run = False
                 pygame.quit()
-        
+
             if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_LCTRL and len(nasa_bullets) < MAX_BULLETS: 
+                if event.key == pygame.K_LCTRL and len(nasa_bullets) < MAX_BULLETS:
                     bullet = pygame.Rect(nasa.x + nasa.width, nasa.y + nasa.height//2 - 2, 10, 5)
                     nasa_bullets.append(bullet)
                     SOUND_GUN.play()
-                    
+
                 if event.key == pygame.K_RCTRL and len(alien_bullets) < MAX_BULLETS:
                     bullet = pygame.Rect(alien.x, alien.y + alien.height//2 - 2, 10, 5)
                     alien_bullets.append(bullet)
                     SOUND_GUN.play()
-                    
+
             if event.type == NASA_HIT:
                 nasa_health -= 1
                 SOUND_HIT.play()
             if event.type == ALIEN_HIT:
                 alien_health -= 1
                 SOUND_HIT.play()
-                
+
         winner_text = ""
         if nasa_health <= 0:
             winner_text =  "ALIEN SHIP WINS!"
@@ -192,14 +195,14 @@ def main():
         if winner_text != "":
             winner(winner_text)
             break
-        
-        
+
+
         keys_pressed = pygame.key.get_pressed()
         movement_function_nasa(keys_pressed, nasa)
         movement_function_alien(keys_pressed, alien)
 
         bullets_handle(nasa_bullets, alien_bullets, nasa, alien)
-        drawing_elements(alien, nasa, nasa_bullets, alien_bullets, alien_health, nasa_health)        
+        drawing_elements(alien, nasa, nasa_bullets, alien_bullets, alien_health, nasa_health)
     main()
 if __name__ == '__main__':
     main()
