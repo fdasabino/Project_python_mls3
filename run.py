@@ -1,12 +1,14 @@
 # python code goes here
-import pygame
+"""
+Imported Libraries and global variables
+"""
 import os
-
+import pygame
 pygame.font.init()
 pygame.mixer.init()
 
 # Global variables
-WIDTH, HEIGHT = 1050, 900
+WIDTH, HEIGHT = 1300,900
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Nasa Vs Aliens!")
 
@@ -40,16 +42,16 @@ SOUND_GUN = pygame.mixer.Sound(os.path.join('Assets', 'laser_gun.mp3'))
 # texts import
 TEXT_FONT = pygame.font.SysFont('arial', 50)
 
-# hit events 
+# hit events
 NASA_HIT = pygame.USEREVENT + 1
 ALIEN_HIT = pygame.USEREVENT + 2
 
 # left spaceship
-NASA_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','nasa.png'))
-NASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(NASA_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 270)
+NASA_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets', 'nasa.png'))
+NASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(NASA_SPACESHIP_IMG,(SHIPS_WIDTH, SHIPS_HEIGHT)), 270)
 
 # right spaceship
-ALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets','alien.png'))
+ALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets', 'alien.png'))
 ALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale(ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)
 
 # background image
@@ -195,13 +197,9 @@ def main():
         keys_pressed = pygame.key.get_pressed()
         movement_function_nasa(keys_pressed, nasa)
         movement_function_alien(keys_pressed, alien)
-        
-        bullets_handle(nasa_bullets, alien_bullets, nasa, alien)
-        
-        drawing_elements(alien, nasa, nasa_bullets, alien_bullets, alien_health, nasa_health)
-        
-    
-    main()
 
+        bullets_handle(nasa_bullets, alien_bullets, nasa, alien)
+        drawing_elements(alien, nasa, nasa_bullets, alien_bullets, alien_health, nasa_health)        
+    main()
 if __name__ == '__main__':
     main()
