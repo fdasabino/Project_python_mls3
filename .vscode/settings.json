@@ -1,30 +1,32 @@
 {
-   "python.linting.pylintEnabled": true,
-   "python.linting.enabled": true,
-   "python.linting.pycodestyleEnabled": false,
-   "python.linting.flake8Enabled": false,
-   "python.terminal.activateEnvironment": false,
-   "python.formatting.autopep8Path": "/home/gitpod/.pyenv/shims/autopep8",
-   "python.linting.flake8Path": "/home/gitpod/.pyenv/shims/flake8",
-   "cornflakes.linter.executablePath": "/home/gitpod/.pyenv/shims/flake8",
-   "files.exclude": {
-      "**/.git": true,
-      "**/.gitp*": true,
-      "**/.svn": true,
-      "**/.hg": true,
-      "**/CVS": true,
-      "**/.DS_Store": true,
-      "**/.vscode": true,
-      "**/core.Microsoft*": true,
-      "**/core.mongo*": true,
-      "**/core.python*": true
-   },
-   "files.autoSave": "off",
-   "workbench.colorTheme": "Default Dark+",
-   "editor.defaultFormatter": "HookyQR.beautify",
-   "editor.formatOnSave": true,
-   "cSpell.ignoreWords": [
-      "pygame"
-   ],
-   "python.linting.banditEnabled": false
+	"python.linting.pylintEnabled": true,
+	"python.linting.enabled": true,
+	"python.linting.pycodestyleEnabled": false,
+	"python.linting.flake8Enabled": false,
+	"python.terminal.activateEnvironment": false,
+	"python.formatting.autopep8Path": "/home/gitpod/.pyenv/shims/autopep8",
+	"python.linting.flake8Path": "/home/gitpod/.pyenv/shims/flake8",
+	"cornflakes.linter.executablePath": "/home/gitpod/.pyenv/shims/flake8",
+	"files.exclude": {
+		"**/.git": true,
+		"**/.gitp*": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/.vscode": true,
+		"**/core.Microsoft*": true,
+		"**/core.mongo*": true,
+		"**/core.python*": true
+	},
+	"files.autoSave": "off",
+	"workbench.colorTheme": "Default Dark+",
+	"editor.formatOnSave": true,
+	"cSpell.ignoreWords": [
+		"nasa",
+		"pygame",
+		"spaceship",
+		"vel"
+	],
+	"python.linting.pylintArgs": ["--extension-pkg-whitelist=pygame"]
 }

@@ -49,7 +49,7 @@
         "kind": 2,
         "importPath": "run",
         "description": "run",
-        "peekOfCode": "def bullets_handle(nasa_bullets, alien_bullets, nasa, alien):\n    \"\"\"\n    Handles bullets movement and collision of the fired bullets on the screen \n    \"\"\"\n    for bullet in nasa_bullets:\n        bullet.x += BULLET_VEL\n        if alien.colliderect(bullet):\n            pygame.event.post(pygame.event.Event(ALIEN_HIT))\n            nasa_bullets.remove(bullet)\n        elif bullet.x > WIDTH:",
+        "peekOfCode": "def bullets_handle(nasa_bullets, alien_bullets, nasa, alien):\n    \"\"\"\n    Handles bullets movement and collision of the fired bullets on the screen.\n    \"\"\"\n    for bullet in nasa_bullets:\n        bullet.x += BULLET_VEL\n        if alien.colliderect(bullet):\n            pygame.event.post(pygame.event.Event(ALIEN_HIT))\n            nasa_bullets.remove(bullet)\n        elif bullet.x > WIDTH:",
         "detail": "run",
         "documentation": {}
     },

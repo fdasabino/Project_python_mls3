@@ -115,7 +115,7 @@ def movement_function_alien(keys_pressed, alien):
 # bullets function
 def bullets_handle(nasa_bullets, alien_bullets, nasa, alien):
     """
-    Handles bullets movement and collision of the fired bullets on the screen 
+    Handles bullets movement and collision of the fired bullets on the screen.
     """
     for bullet in nasa_bullets:
         bullet.x += BULLET_VEL
