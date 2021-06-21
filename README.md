@@ -8,7 +8,7 @@
 -   Nasa vs Aliens is a game developed to bring back the nostalgia of the 80s and 90s 2d games. This application target is mostly
     people that enjoy a good, light old fashioned game to pass the time or simply for the act of socializing.
 
- <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screen_shots/game_screen_shot.jpg">
+ <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/game_screen_shot%20-%20Copy.jpg">
 
 live heroku link here
 
@@ -47,31 +47,3 @@ Players can share the same keyboard in order to play a match.
 
 1. In a near future I would like to implement a intro that presents the game.
 2. Add a menu that let players choose their game character.
-
-## User Experience
-
-### Users can
-
-Enjoy a simple and easy to run command line application that can be played by two players on the same keyboard simultaneously.
-The game can also played by one player using both hands to challenge their keyboard skills.
-
-### First Time Visitor Goals
-
-As a first time visitor, I would like to play a fun game that brings out the simplicity of old school games, on a modern platform.
-
-### Returning Visitor Goals
-
-As a returning user I would like to have the application deployed and easy to access, so I can play the game with friends and family.
-
-## Design & Imagery
-
-As part of the design of the application Python allows you create global variables using color palettes and images.
-
-<img src="">
-
-The spaceships and background are imported images.
-<img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/nasa.png">
-<img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/alien.png">
-
-The bullets fired by the ships and main border are created by a pygame module called (Rect).
-<img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/bullets_code.jpg">
