@@ -18,7 +18,7 @@ live heroku link here
 
 -   Health Status
 
- <img src="">
+ <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/health_status.jpg">
 
 Visible through out each match, shows players the status of their ship. Each player has 10 life points,
 whenever a player reaches 0 the game is restarted.
@@ -67,11 +67,11 @@ As a returning user I would like to have the application deployed and easy to ac
 
 As part of the design of the application Python allows you create global variables using color palettes and images.
 
-    <img src="">
+<img src="">
 
 The spaceships and background are imported images.
 <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/nasa.png">
 <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/alien.png">
 
 The bullets fired by the ships and main border are created by a pygame module called (Rect).
-<img src="">
+<img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/bullets_code.jpg">
