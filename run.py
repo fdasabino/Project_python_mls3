@@ -26,7 +26,7 @@ FPS = 60
 VEL = 8
 
 # bullets
-BULLET_VEL = 15
+BULLET_VEL = 10
 MAX_BULLETS = 5
 
 # images + sizes

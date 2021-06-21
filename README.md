@@ -14,7 +14,7 @@ live heroku link here
 
 ## Features
 
-### Existing Features
+#### Existing Features
 
 -   Health Status
 
@@ -35,6 +35,8 @@ Players can share the same keyboard in order to play a match.
 -   RIGHT --> D
 -   SHOOT --> SPACE-BAR
 
+ <img src="#">
+
 2. The right player uses the following keys:
 
 -   UP --> ARROW UP
@@ -42,6 +44,12 @@ Players can share the same keyboard in order to play a match.
 -   LEFT --> ARROW LEFT
 -   RIGHT --> ARROW RIGHT
 -   SHOOT --> RIGHT CTRL
+
+#### Winner Text
+
+-   Each time the opposite side reaches 0 health the winner is announced.
+
+ <img src="#">
 
 #### Features Left to Implement
 
