@@ -35,7 +35,7 @@ Players can share the same keyboard in order to play a match.
 -   RIGHT --> D
 -   SHOOT --> SPACE-BAR
 
- <img src="#">
+ <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/bullets.jpg">
 
 2. The right player uses the following keys:
 
@@ -49,7 +49,7 @@ Players can share the same keyboard in order to play a match.
 
 -   Each time the opposite side reaches 0 health the winner is announced.
 
- <img src="#">
+ <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/winner_text.jpg">
 
 #### Features Left to Implement
 
