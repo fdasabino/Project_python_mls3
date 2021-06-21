@@ -10,8 +10,6 @@
 
  <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/game_screen_shot%20-%20Copy.jpg">
 
-live heroku link here
-
 ## Features
 
 #### Existing Features
@@ -105,6 +103,13 @@ The validator have shown some warnings with the code written, these warnings don
 -   E303:200:9:too many blank lines (2)
 -   E501:205:80:line too long (93 > 79 characters)
 
+### Validator Testing
+
+The code for this program was tested using the [PEP8 - validator](Assets\Validating\PEP8.txt) and [Codeac - validator](https://app.codeac.io/github/fdasabino/Project_python_mls3).
+No major issues were found with code.
+
+<img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/checker2.jpg">
+
 ### Unfixed Bugs
 
 -   When I run the application in my IDE the following warning appears in my command line:
@@ -118,7 +123,20 @@ The validator have shown some warnings with the code written, these warnings don
 None of the above stops the program from running and executing, which makes me believe that
 is a problem with some of pygame's libraries.
 
-### Validator Testing
+## Deployment
 
-The code for this program was tested using the [PEP8 - validator](Assets\Validating\PEP8.txt) and [Codeac - validator](https://app.codeac.io/github/fdasabino/Project_python_mls3).
-No major issues were found with code.
+This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
+
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+In the GitHub repository, navigate to the Settings tab
+From the source section drop-down menu, select the Master Branch
+Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html
+
+## Credits
+
+### Content
+
+### Media
+
+## Other General Project Advice

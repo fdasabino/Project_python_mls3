@@ -7,7 +7,9 @@ import pygame
 pygame.font.init()
 pygame.mixer.init()
 
-# Global variables
+# Global variables>>>>
+
+# Width and height for the window
 WIDTH, HEIGHT = 1300,900
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Nasa Vs Aliens!")
@@ -59,6 +61,7 @@ ALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale
 # background image
 BACKGROUND = pygame.transform.scale(pygame.image.load(os.path.join
                                                       ('Assets', 'space.jpg')), (WIDTH,HEIGHT))
+# <<<<<<<
 
 # drawing function
 def drawing_elements(alien, nasa, nasa_bullets, alien_bullets, alien_health, nasa_health):
