@@ -170,7 +170,7 @@ def main():
                 pygame.quit()
 
             if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_LCTRL and len(nasa_bullets) < MAX_BULLETS:
+                if event.key == pygame.K_SPACE and len(nasa_bullets) < MAX_BULLETS:
                     bullet = pygame.Rect(nasa.x + nasa.width, nasa.y + nasa.height//2 - 2, 10, 5)
                     nasa_bullets.append(bullet)
                     SOUND_GUN.play()
