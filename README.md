@@ -56,9 +56,11 @@ Players can share the same keyboard in order to play a match.
 1. In a near future I would like to implement a intro that presents the game.
 2. Add a menu that let players choose their game character.
 
-## Testing
+## Testing [![Codeac](https://static.codeac.io/badges/2-377614318.svg "Codeac")](https://app.codeac.io/github/fdasabino/Project_python_mls3)
 
-The validator have not shown any big errors with the code, except for some warnings that have been ignored:
+The error shown by the validator is located on the provided deployment files provided by the template owner.
+
+The validator have shown some warnings with the code written, these warnings don't create any problems and were therefore ignored:
 
 -   E231:11:21:missing whitespace after ','
 -   E231:52:61:missing whitespace after ','
@@ -103,8 +105,20 @@ The validator have not shown any big errors with the code, except for some warni
 -   E303:200:9:too many blank lines (2)
 -   E501:205:80:line too long (93 > 79 characters)
 
+### Unfixed Bugs
+
+-   When I run the application in my IDE the following warning appears in my command line:
+
+1. [libpng warning: iCCP: known incorrect sRGB profile](https://www.google.com/search?q=libpng+warning%3A+iCCP%3A+known+incorrect+sRGB+profile&rlz=1C1CHBD_enSE943SE943&oq=libpng+warning%3A+iCCP%3A+known+incorrect+sRGB+profile&aqs=chrome.0.69i59.615j0j7&sourceid=chrome&ie=UTF-8)
+
+-   When the application is stopped the following error is shown:
+
+2. [pygame.error: video system not initialized](https://www.google.com/search?q=pygame.error%3A+video+system+not+initialized&rlz=1C1CHBD_enSE943SE943&sxsrf=ALeKk00M-Mu0KMq8QHLnGLyoLmtNzf8Vbg%3A1624296425479&ei=6cvQYP7YHKWQrgTq8KCQCw&oq=pygame.error%3A+video+system+not+initialized&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyAggAMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeUIaiAliGogJgv6QCaABwAngAgAF2iAHsAZIBAzAuMpgBAKABAqABAaoBB2d3cy13aXrAAQE&sclient=gws-wiz&ved=0ahUKEwi-8czbn6nxAhUliIsKHWo4CLIQ4dUDCA4&uact=5)
+
+None of the above stops the program from running and executing, which makes me believe that
+is a problem with some of pygame's libraries.
+
 ### Validator Testing
 
-The code for this program was tested using the [PEP8 - validator](Assets\Validating\PEP8.txt)
-and [Codeac - validator](https://app.codeac.io/github/fdasabino/Project_python_mls3).
+The code for this program was tested using the [PEP8 - validator](Assets\Validating\PEP8.txt) and [Codeac - validator](https://app.codeac.io/github/fdasabino/Project_python_mls3).
 No major issues were found with code.
