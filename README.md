@@ -55,3 +55,56 @@ Players can share the same keyboard in order to play a match.
 
 1. In a near future I would like to implement a intro that presents the game.
 2. Add a menu that let players choose their game character.
+
+## Testing
+
+The validator have not shown any big errors with the code, except for some warnings that have been ignored:
+
+-   E231:11:21:missing whitespace after ','
+-   E231:52:61:missing whitespace after ','
+-   E501:52:80:line too long (95 > 79 characters)
+-   E501:57:80:line too long (97 > 79 characters)
+-   E501:61:80:line too long (95 > 79 characters)
+-   E231:61:87:missing whitespace after ','
+-   E302:64:1:expected 2 blank lines, found 1
+-   E501:64:80:line too long (90 > 79 characters)
+-   E261:69:33:at least two spaces before inline comment
+-   E501:71:80:line too long (96 > 79 characters)
+-   E261:71:81:at least two spaces before inline comment
+-   E501:72:80:line too long (96 > 79 characters)
+-   E261:72:81:at least two spaces before inline comment
+-   E225:74:71:missing whitespace around operator
+-   E501:74:80:line too long (80 > 79 characters)
+-   E261:75:47:at least two spaces before inline comment
+-   E261:76:50:at least two spaces before inline comment
+-   E302:87:1:expected 2 blank lines, found 1
+-   E261:93:54:at least two spaces before inline comment
+-   E261:95:74:at least two spaces before inline comment
+-   E501:95:80:line too long (81 > 79 characters)
+-   E261:97:54:at least two spaces before inline comment
+-   E261:99:73:at least two spaces before inline comment
+-   E302:103:1:expected 2 blank lines, found 1
+-   E261:109:80:at least two spaces before inline comment
+-   E501:109:80:line too long (86 > 79 characters)
+-   E261:111:77:at least two spaces before inline comment
+-   E501:111:80:line too long (84 > 79 characters)
+-   E261:113:56:at least two spaces before inline comment
+-   E501:115:80:line too long (89 > 79 characters)
+-   E261:115:83:at least two spaces before inline comment
+-   E302:119:1:expected 2 blank lines, found 1
+-   E302:140:1:expected 2 blank lines, found 1
+-   E501:145:80:line too long (100 > 79 characters)
+-   E302:150:1:expected 2 blank lines, found 1
+-   E501:173:80:line too long (83 > 79 characters)
+-   E501:174:80:line too long (97 > 79 characters)
+-   E501:178:80:line too long (84 > 79 characters)
+-   E501:179:80:line too long (87 > 79 characters)
+-   E222:192:26:multiple spaces after operator
+-   E303:200:9:too many blank lines (2)
+-   E501:205:80:line too long (93 > 79 characters)
+
+### Validator Testing
+
+The code for this program was tested using the [PEP8 - validator](Assets\Validating\PEP8.txt)
+and [Codeac - validator](https://app.codeac.io/github/fdasabino/Project_python_mls3).
+No major issues were found with code.
