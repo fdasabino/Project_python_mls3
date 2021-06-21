@@ -2,6 +2,8 @@
 
 -   This application was created using python as part of my milestone number 3 for the Code Institute fullstack software development program.
 
+<img src="Assets\Screen_shots\game_screen_shot.jpg">
+
 ## 1. Project Goals
 
 -   The main goal with this project is demonstrate the power of python programing language, And how simple it is to implement a
@@ -31,5 +33,3 @@ live link here
 -   The spaceships and background are imported images.
 
 -   The bullets fired by the ships and main border are created by a pygame module called (Rect).
-
-<img src="Assets\Screen_shots\game_screen_shot.jpg">
