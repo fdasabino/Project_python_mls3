@@ -2,7 +2,7 @@
 
 -   This application was created using python as part of my milestone number 3 for the Code Institute fullstack software development program.
 
-<img src="Assets\Screen_shots\game_screen_shot.jpg">
+ <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screen_shots/game_screen_shot.jpg">
 
 ## 1. Project Goals
 
