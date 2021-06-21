@@ -2,7 +2,7 @@
 
 ## Project Goals
 
--   The main goal with this project is demonstrate the power of python programing language, And how simple it is to implement a
+-   The main goal with this project is demonstrate the power of python programing language, and how simple it is to implement a
     basic application concept.
 
 -   Nasa vs Aliens is a game developed to bring back the nostalgia of the 80s and 90s 2d games. This application target is mostly
@@ -23,7 +23,7 @@ live heroku link here
 Visible through out each match, shows players the status of their ship. Each player has 10 life points,
 whenever a player reaches 0 the game is restarted.
 
--   Two Player Game
+#### Two Player Game
 
 Players can share the same keyboard in order to play a match.
 
@@ -43,7 +43,7 @@ Players can share the same keyboard in order to play a match.
 -   RIGHT --> ARROW RIGHT
 -   SHOOT --> RIGHT CTRL
 
-## Features Left to Implement
+#### Features Left to Implement
 
 1. In a near future I would like to implement a intro that presents the game.
 2. Add a menu that let players choose their game character.
