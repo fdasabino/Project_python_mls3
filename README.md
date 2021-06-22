@@ -135,8 +135,10 @@ The live link can be found here - https://code-institute-org.github.io/love-runn
 
 ## Credits
 
-### Content
-
 ### Media
 
-## Other General Project Advice
+1. Sound effects obtained from [Zapsplat](https://www.zapsplat.com).
+
+2. The photos used on the home and sign up page are from [Pexels](https://www.pexels.com/).
+
+3. The spaceship images were obtained from [NicePNG](NicePNG.com).
