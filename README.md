@@ -105,7 +105,7 @@ The validator have shown some warnings with the code written, these warnings don
 -   E303:200:9:too many blank lines (2)
 -   E501:205:80:line too long (93 > 79 characters)
 
-The code for this program was tested using the [PEP8 - validator](Assets\Validating\PEP8.txt) and [Codeac - validator](https://app.codeac.io/github/fdasabino/Project_python_mls3).
+The code for this program was tested using the [PEP8 - validator](https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Validating/PEP8.txt) and [Codeac - validator](https://app.codeac.io/github/fdasabino/Project_python_mls3).
 No major issues were found with code.
 
 <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/checker2.jpg">
@@ -139,7 +139,7 @@ is a problem with some of pygame's libraries.
 
 ### Modules
 
-1. The project was developed using [Pygame](https://www.pygame.org/news)
+1. The project was developed using [Pygame](https://www.pygame.org/news).
 
 Pygame is a set of Python modules designed for writing video games. Pygame adds functionality
 on top of the excellent SDL library. This allows you to create fully featured games and multimedia programs in the python language.
