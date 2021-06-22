@@ -1,2 +1,1 @@
-web: node index.js
-web: python run.py
+web: gunicorn gettingstarted.wsgi
