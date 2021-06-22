@@ -117,18 +117,18 @@ No major issues were found with code.
 - The files have been published on a [Replit](https://replit.com/@fdasabino) IDE.
 
 ### Unfixed Bugs
-- I have commented out the code regarding the sound effects on lines 42, 43, 202, 210, 214, 217.
+1. I have commented out the code regarding the sound effects on lines 42, 43, 202, 210, 214, 217 on the [run.py](run.py) file.
 The main reason being replit does not execute the pygame sound library.
 
-<img src="">
-<img src="">
+<img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/commented_42%2C43.jpg">
+<img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/commented_202%2C%20210%2C%20214%2C%20217.jpg">
 
 
--   When I run the application in my IDE the following warning appears in my command line:
+2. When I run the application in my IDE the following warning appears in my command line:
 
 [libpng warning: iCCP: known incorrect sRGB profile](https://www.google.com/search?q=libpng+warning%3A+iCCP%3A+known+incorrect+sRGB+profile&rlz=1C1CHBD_enSE943SE943&oq=libpng+warning%3A+iCCP%3A+known+incorrect+sRGB+profile&aqs=chrome.0.69i59.615j0j7&sourceid=chrome&ie=UTF-8)
 
--   When the application is stopped the following error is shown:
+3. When the application is stopped the following error is shown:
 
 [pygame.error: video system not initialized](https://www.google.com/search?q=pygame.error%3A+video+system+not+initialized&rlz=1C1CHBD_enSE943SE943&sxsrf=ALeKk00M-Mu0KMq8QHLnGLyoLmtNzf8Vbg%3A1624296425479&ei=6cvQYP7YHKWQrgTq8KCQCw&oq=pygame.error%3A+video+system+not+initialized&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyAggAMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeUIaiAliGogJgv6QCaABwAngAgAF2iAHsAZIBAzAuMpgBAKABAqABAaoBB2d3cy13aXrAAQE&sclient=gws-wiz&ved=0ahUKEwi-8czbn6nxAhUliIsKHWo4CLIQ4dUDCA4&uact=5)
 
