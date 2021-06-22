@@ -154,3 +154,8 @@ Pygame is free. Released under the LGPL licence, you can create open source,
 2. The photos used on the home and sign up page are from [Pexels](https://www.pexels.com/).
 
 3. The spaceship images were obtained from [NicePNG](NicePNG.com).
+
+### Special Thanks
+
+- A big thanks to Alan and the Student Support team for coming up with the deployment idea
+and of course for their time.
