@@ -1,0 +1,626 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "django_heroku",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django_heroku",
+        "description": "django_heroku",
+        "detail": "django_heroku",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "hello.views",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hello.views",
+        "description": "hello.views",
+        "detail": "hello.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "unicode_literals",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "AnonymousUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "RequestFactory",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "pygame",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pygame",
+        "description": "pygame",
+        "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "gettingstarted.settings",
+        "description": "gettingstarted.settings",
+        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = \"CHANGE_ME!!!! (P.S. the SECRET_KEY environment variable will be used, if set, instead).\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "gettingstarted.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "gettingstarted.settings",
+        "description": "gettingstarted.settings",
+        "peekOfCode": "SECRET_KEY = \"CHANGE_ME!!!! (P.S. the SECRET_KEY environment variable will be used, if set, instead).\"\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",",
+        "detail": "gettingstarted.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "gettingstarted.settings",
+        "description": "gettingstarted.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",",
+        "detail": "gettingstarted.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "gettingstarted.settings",
+        "description": "gettingstarted.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"hello\",",
+        "detail": "gettingstarted.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "gettingstarted.settings",
+        "description": "gettingstarted.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"hello\",\n]\nMIDDLEWARE = [",
+        "detail": "gettingstarted.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "gettingstarted.settings",
+        "description": "gettingstarted.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    \"django.middleware.security.SecurityMiddleware\",\n    \"django.contrib.sessions.middleware.SessionMiddleware\",\n    \"django.middleware.common.CommonMiddleware\",\n    \"django.middleware.csrf.CsrfViewMiddleware\",\n    \"django.contrib.auth.middleware.AuthenticationMiddleware\",\n    \"django.contrib.messages.middleware.MessageMiddleware\",\n    \"django.middleware.clickjacking.XFrameOptionsMiddleware\",\n]\nROOT_URLCONF = \"gettingstarted.urls\"",
+        "detail": "gettingstarted.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "gettingstarted.settings",
+        "description": "gettingstarted.settings",
+        "peekOfCode": "ROOT_URLCONF = \"gettingstarted.urls\"\nTEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",",
+        "detail": "gettingstarted.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "gettingstarted.settings",
+        "description": "gettingstarted.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        \"BACKEND\": \"django.template.backends.django.DjangoTemplates\",\n        \"DIRS\": [],\n        \"APP_DIRS\": True,\n        \"OPTIONS\": {\n            \"context_processors\": [\n                \"django.template.context_processors.debug\",\n                \"django.template.context_processors.request\",\n                \"django.contrib.auth.context_processors.auth\",",
+        "detail": "gettingstarted.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "gettingstarted.settings",
+        "description": "gettingstarted.settings",
+        "peekOfCode": "WSGI_APPLICATION = \"gettingstarted.wsgi.application\"\n# Database\n# https://docs.djangoproject.com/en/2.0/ref/settings/#databases\nDATABASES = {\n    \"default\": {\n        \"ENGINE\" : \"django.db.backends.sqlite3\",\n        \"NAME\": os.path.join(BASE_DIR, \"db.sqlite3\")\n    }\n}\n# Password validation",
+        "detail": "gettingstarted.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "gettingstarted.settings",
+        "description": "gettingstarted.settings",
+        "peekOfCode": "DATABASES = {\n    \"default\": {\n        \"ENGINE\" : \"django.db.backends.sqlite3\",\n        \"NAME\": os.path.join(BASE_DIR, \"db.sqlite3\")\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "gettingstarted.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "gettingstarted.settings",
+        "description": "gettingstarted.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        \"NAME\": \"django.contrib.auth.password_validation.UserAttributeSimilarityValidator\"\n    },\n    {\"NAME\": \"django.contrib.auth.password_validation.MinimumLengthValidator\"},\n    {\"NAME\": \"django.contrib.auth.password_validation.CommonPasswordValidator\"},\n    {\"NAME\": \"django.contrib.auth.password_validation.NumericPasswordValidator\"},\n]\n# Internationalization\n# https://docs.djangoproject.com/en/2.0/topics/i18n/",
+        "detail": "gettingstarted.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "gettingstarted.settings",
+        "description": "gettingstarted.settings",
+        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.0/howto/static-files/\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nSTATIC_URL = \"/static/\"\ndjango_heroku.settings(locals())",
+        "detail": "gettingstarted.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "gettingstarted.settings",
+        "description": "gettingstarted.settings",
+        "peekOfCode": "TIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.0/howto/static-files/\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nSTATIC_URL = \"/static/\"\ndjango_heroku.settings(locals())",
+        "detail": "gettingstarted.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "gettingstarted.settings",
+        "description": "gettingstarted.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.0/howto/static-files/\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nSTATIC_URL = \"/static/\"\ndjango_heroku.settings(locals())",
+        "detail": "gettingstarted.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_L10N",
+        "kind": 5,
+        "importPath": "gettingstarted.settings",
+        "description": "gettingstarted.settings",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.0/howto/static-files/\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nSTATIC_URL = \"/static/\"\ndjango_heroku.settings(locals())",
+        "detail": "gettingstarted.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "gettingstarted.settings",
+        "description": "gettingstarted.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/2.0/howto/static-files/\nSTATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nSTATIC_URL = \"/static/\"\ndjango_heroku.settings(locals())",
+        "detail": "gettingstarted.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "gettingstarted.settings",
+        "description": "gettingstarted.settings",
+        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')\nSTATIC_URL = \"/static/\"\ndjango_heroku.settings(locals())",
+        "detail": "gettingstarted.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "gettingstarted.settings",
+        "description": "gettingstarted.settings",
+        "peekOfCode": "STATIC_URL = \"/static/\"\ndjango_heroku.settings(locals())",
+        "detail": "gettingstarted.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "gettingstarted.urls",
+        "description": "gettingstarted.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"\", hello.views.index, name=\"index\"),\n    path(\"db/\", hello.views.db, name=\"db\"),\n    path(\"admin/\", admin.site.urls),\n]",
+        "detail": "gettingstarted.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "gettingstarted.wsgi",
+        "description": "gettingstarted.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "gettingstarted.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "hello.migrations.0001_initial",
+        "description": "hello.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Greeting',\n            fields=[\n                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('when', models.DateTimeField(auto_now_add=True, verbose_name=b'date created')),",
+        "detail": "hello.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Greeting",
+        "kind": 6,
+        "importPath": "hello.models",
+        "description": "hello.models",
+        "peekOfCode": "class Greeting(models.Model):\n    when = models.DateTimeField(\"date created\", auto_now_add=True)",
+        "detail": "hello.models",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleTest",
+        "kind": 6,
+        "importPath": "hello.tests",
+        "description": "hello.tests",
+        "peekOfCode": "class SimpleTest(TestCase):\n    def setUp(self):\n        # Every test needs access to the request factory.\n        self.factory = RequestFactory()\n    def test_details(self):\n        # Create an instance of a GET request.\n        request = self.factory.get(\"/\")\n        request.user = AnonymousUser()\n        # Test my_view() as if it were deployed at /customer/details\n        response = index(request)",
+        "detail": "hello.tests",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "hello.views",
+        "description": "hello.views",
+        "peekOfCode": "def index(request):\n    # return HttpResponse('Hello from Python!')\n    return render(request, \"index.html\")\ndef db(request):\n    greeting = Greeting()\n    greeting.save()\n    greetings = Greeting.objects.all()\n    return render(request, \"db.html\", {\"greetings\": greetings})",
+        "detail": "hello.views",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 2,
+        "importPath": "hello.views",
+        "description": "hello.views",
+        "peekOfCode": "def db(request):\n    greeting = Greeting()\n    greeting.save()\n    greetings = Greeting.objects.all()\n    return render(request, \"db.html\", {\"greetings\": greetings})",
+        "detail": "hello.views",
+        "documentation": {}
+    },
+    {
+        "label": "drawing_elements",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def drawing_elements(alien, nasa, nasa_bullets, alien_bullets, alien_health, nasa_health):\n    \"\"\"\n    Draws the elements in the screen.\n    PS: it's important to draw the elements on the right order.\n    \"\"\"\n    WIN.blit(BACKGROUND, (0, 0)) # background\n    pygame.draw.rect(WIN, BLUE, BORDER)\n    nasa_health_text = TEXT_FONT.render(\"Health: \" + str(nasa_health), 1, GREEN) # health status\n    alien_health_text = TEXT_FONT.render(\"Health: \" + str(alien_health), 1, RED) # health status\n    WIN.blit(nasa_health_text, (10, 10))",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "movement_function_nasa",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def movement_function_nasa(keys_pressed, nasa):\n    \"\"\"\n    Defines the keys to move the nasa spaceships on the screen\n    \"\"\"\n    # nasa ship controls\n    keys_pressed = pygame.key.get_pressed()\n    if keys_pressed[pygame.K_a] and nasa.x - VEL > 0: # left\n        nasa.x -= VEL\n    if keys_pressed[pygame.K_d] and nasa.x + VEL + nasa.width < BORDER.x: # right\n        nasa.x += VEL",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "movement_function_alien",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def movement_function_alien(keys_pressed, alien):\n    \"\"\"\n    defines the keys to move the alien spaceships on the screen\n    \"\"\"\n    # nasa ship controls\n    keys_pressed = pygame.key.get_pressed()\n    if keys_pressed[pygame.K_LEFT] and alien.x - VEL > BORDER.x + BORDER.width: # left\n        alien.x -= VEL\n    if keys_pressed[pygame.K_RIGHT] and alien.x + VEL + alien.width < WIDTH: # right\n        alien.x += VEL",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "bullets_handle",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def bullets_handle(nasa_bullets, alien_bullets, nasa, alien):\n    \"\"\"\n    Handles bullets movement and collision of the fired bullets on the screen.\n    \"\"\"\n    for bullet in nasa_bullets:\n        bullet.x += BULLET_VEL\n        if alien.colliderect(bullet):\n            pygame.event.post(pygame.event.Event(ALIEN_HIT))\n            nasa_bullets.remove(bullet)\n        elif bullet.x > WIDTH:",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "winner",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def winner(text):\n    \"\"\"\n    Writes a text with the winner side.\n    \"\"\"\n    write_text = TEXT_FONT.render(text, 1, WHITE)\n    WIN.blit(write_text, (WIDTH/2 - write_text.get_width()/2, HEIGHT/2 - write_text.get_height()/2))\n    pygame.display.update()\n    pygame.time.delay(5000)\n# main function\ndef main():",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "def main():\n    \"\"\"\n    Handles the main loop and the logic of the game.\n    \"\"\"\n    nasa = pygame.Rect(100, 300, SHIPS_WIDTH, SHIPS_HEIGHT)\n    alien = pygame.Rect(700, 300, SHIPS_WIDTH, SHIPS_HEIGHT)\n    nasa_bullets = []\n    alien_bullets = []\n    nasa_health = 10\n    alien_health = 10",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "WIN",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "WIN = pygame.display.set_mode((WIDTH, HEIGHT))\npygame.display.set_caption(\"Nasa Vs Aliens!\")\n# colours for the window\nWHITE = (255, 255, 255)\nGRAY = (102, 102, 102)\nBLUE = (0, 119, 204)\nRED = (255, 0, 0)\nGREEN = (0, 255, 0)\n# frames per second\nFPS = 60",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "WHITE",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "WHITE = (255, 255, 255)\nGRAY = (102, 102, 102)\nBLUE = (0, 119, 204)\nRED = (255, 0, 0)\nGREEN = (0, 255, 0)\n# frames per second\nFPS = 60\n# velocity\nVEL = 8\n# bullets",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "GRAY",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "GRAY = (102, 102, 102)\nBLUE = (0, 119, 204)\nRED = (255, 0, 0)\nGREEN = (0, 255, 0)\n# frames per second\nFPS = 60\n# velocity\nVEL = 8\n# bullets\nBULLET_VEL = 10",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "BLUE",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "BLUE = (0, 119, 204)\nRED = (255, 0, 0)\nGREEN = (0, 255, 0)\n# frames per second\nFPS = 60\n# velocity\nVEL = 8\n# bullets\nBULLET_VEL = 10\nMAX_BULLETS = 5",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "RED",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "RED = (255, 0, 0)\nGREEN = (0, 255, 0)\n# frames per second\nFPS = 60\n# velocity\nVEL = 8\n# bullets\nBULLET_VEL = 10\nMAX_BULLETS = 5\n# images + sizes",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "GREEN",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "GREEN = (0, 255, 0)\n# frames per second\nFPS = 60\n# velocity\nVEL = 8\n# bullets\nBULLET_VEL = 10\nMAX_BULLETS = 5\n# images + sizes\nSHIPS_WIDTH, SHIPS_HEIGHT = 80, 80",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "FPS",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "FPS = 60\n# velocity\nVEL = 8\n# bullets\nBULLET_VEL = 10\nMAX_BULLETS = 5\n# images + sizes\nSHIPS_WIDTH, SHIPS_HEIGHT = 80, 80\n# screen middle division\nBORDER = pygame.Rect(WIDTH//2 - 3, 0, 6, HEIGHT)",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "VEL",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "VEL = 8\n# bullets\nBULLET_VEL = 10\nMAX_BULLETS = 5\n# images + sizes\nSHIPS_WIDTH, SHIPS_HEIGHT = 80, 80\n# screen middle division\nBORDER = pygame.Rect(WIDTH//2 - 3, 0, 6, HEIGHT)\n# bullets sound\nSOUND_HIT = pygame.mixer.Sound(os.path.join('Assets', 'hit_sound.mp3'))",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "BULLET_VEL",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "BULLET_VEL = 10\nMAX_BULLETS = 5\n# images + sizes\nSHIPS_WIDTH, SHIPS_HEIGHT = 80, 80\n# screen middle division\nBORDER = pygame.Rect(WIDTH//2 - 3, 0, 6, HEIGHT)\n# bullets sound\nSOUND_HIT = pygame.mixer.Sound(os.path.join('Assets', 'hit_sound.mp3'))\nSOUND_GUN = pygame.mixer.Sound(os.path.join('Assets', 'laser_gun.mp3'))\n# texts import",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "MAX_BULLETS",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "MAX_BULLETS = 5\n# images + sizes\nSHIPS_WIDTH, SHIPS_HEIGHT = 80, 80\n# screen middle division\nBORDER = pygame.Rect(WIDTH//2 - 3, 0, 6, HEIGHT)\n# bullets sound\nSOUND_HIT = pygame.mixer.Sound(os.path.join('Assets', 'hit_sound.mp3'))\nSOUND_GUN = pygame.mixer.Sound(os.path.join('Assets', 'laser_gun.mp3'))\n# texts import\nTEXT_FONT = pygame.font.SysFont('arial', 50)",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "BORDER",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "BORDER = pygame.Rect(WIDTH//2 - 3, 0, 6, HEIGHT)\n# bullets sound\nSOUND_HIT = pygame.mixer.Sound(os.path.join('Assets', 'hit_sound.mp3'))\nSOUND_GUN = pygame.mixer.Sound(os.path.join('Assets', 'laser_gun.mp3'))\n# texts import\nTEXT_FONT = pygame.font.SysFont('arial', 50)\n# hit events\nNASA_HIT = pygame.USEREVENT + 1\nALIEN_HIT = pygame.USEREVENT + 2\n# left spaceship",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "SOUND_HIT",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "SOUND_HIT = pygame.mixer.Sound(os.path.join('Assets', 'hit_sound.mp3'))\nSOUND_GUN = pygame.mixer.Sound(os.path.join('Assets', 'laser_gun.mp3'))\n# texts import\nTEXT_FONT = pygame.font.SysFont('arial', 50)\n# hit events\nNASA_HIT = pygame.USEREVENT + 1\nALIEN_HIT = pygame.USEREVENT + 2\n# left spaceship\nNASA_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets', 'nasa.png'))\nNASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "SOUND_GUN",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "SOUND_GUN = pygame.mixer.Sound(os.path.join('Assets', 'laser_gun.mp3'))\n# texts import\nTEXT_FONT = pygame.font.SysFont('arial', 50)\n# hit events\nNASA_HIT = pygame.USEREVENT + 1\nALIEN_HIT = pygame.USEREVENT + 2\n# left spaceship\nNASA_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets', 'nasa.png'))\nNASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale\n                                         (NASA_SPACESHIP_IMG,(SHIPS_WIDTH, SHIPS_HEIGHT)), 270)",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "TEXT_FONT",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "TEXT_FONT = pygame.font.SysFont('arial', 50)\n# hit events\nNASA_HIT = pygame.USEREVENT + 1\nALIEN_HIT = pygame.USEREVENT + 2\n# left spaceship\nNASA_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets', 'nasa.png'))\nNASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale\n                                         (NASA_SPACESHIP_IMG,(SHIPS_WIDTH, SHIPS_HEIGHT)), 270)\n# right spaceship\nALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets', 'alien.png'))",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "NASA_HIT",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "NASA_HIT = pygame.USEREVENT + 1\nALIEN_HIT = pygame.USEREVENT + 2\n# left spaceship\nNASA_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets', 'nasa.png'))\nNASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale\n                                         (NASA_SPACESHIP_IMG,(SHIPS_WIDTH, SHIPS_HEIGHT)), 270)\n# right spaceship\nALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets', 'alien.png'))\nALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale\n                                          (ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "ALIEN_HIT",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "ALIEN_HIT = pygame.USEREVENT + 2\n# left spaceship\nNASA_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets', 'nasa.png'))\nNASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale\n                                         (NASA_SPACESHIP_IMG,(SHIPS_WIDTH, SHIPS_HEIGHT)), 270)\n# right spaceship\nALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets', 'alien.png'))\nALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale\n                                          (ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)\n# background image",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "NASA_SPACESHIP_IMG",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "NASA_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets', 'nasa.png'))\nNASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale\n                                         (NASA_SPACESHIP_IMG,(SHIPS_WIDTH, SHIPS_HEIGHT)), 270)\n# right spaceship\nALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets', 'alien.png'))\nALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale\n                                          (ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)\n# background image\nBACKGROUND = pygame.transform.scale(pygame.image.load(os.path.join\n                                                      ('Assets', 'space.jpg')), (WIDTH,HEIGHT))",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "NASA_SPACESHIP",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "NASA_SPACESHIP = pygame.transform.rotate(pygame.transform.scale\n                                         (NASA_SPACESHIP_IMG,(SHIPS_WIDTH, SHIPS_HEIGHT)), 270)\n# right spaceship\nALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets', 'alien.png'))\nALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale\n                                          (ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)\n# background image\nBACKGROUND = pygame.transform.scale(pygame.image.load(os.path.join\n                                                      ('Assets', 'space.jpg')), (WIDTH,HEIGHT))\n# <<<<<<<",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "ALIEN_SPACESHIP_IMG",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "ALIEN_SPACESHIP_IMG = pygame.image.load(os.path.join('Assets', 'alien.png'))\nALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale\n                                          (ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)\n# background image\nBACKGROUND = pygame.transform.scale(pygame.image.load(os.path.join\n                                                      ('Assets', 'space.jpg')), (WIDTH,HEIGHT))\n# <<<<<<<\n# drawing function\ndef drawing_elements(alien, nasa, nasa_bullets, alien_bullets, alien_health, nasa_health):\n    \"\"\"",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "ALIEN_SPACESHIP",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "ALIEN_SPACESHIP = pygame.transform.rotate(pygame.transform.scale\n                                          (ALIEN_SPACESHIP_IMG, (SHIPS_WIDTH, SHIPS_HEIGHT)), 90)\n# background image\nBACKGROUND = pygame.transform.scale(pygame.image.load(os.path.join\n                                                      ('Assets', 'space.jpg')), (WIDTH,HEIGHT))\n# <<<<<<<\n# drawing function\ndef drawing_elements(alien, nasa, nasa_bullets, alien_bullets, alien_health, nasa_health):\n    \"\"\"\n    Draws the elements in the screen.",
+        "detail": "run",
+        "documentation": {}
+    },
+    {
+        "label": "BACKGROUND",
+        "kind": 5,
+        "importPath": "run",
+        "description": "run",
+        "peekOfCode": "BACKGROUND = pygame.transform.scale(pygame.image.load(os.path.join\n                                                      ('Assets', 'space.jpg')), (WIDTH,HEIGHT))\n# <<<<<<<\n# drawing function\ndef drawing_elements(alien, nasa, nasa_bullets, alien_bullets, alien_health, nasa_health):\n    \"\"\"\n    Draws the elements in the screen.\n    PS: it's important to draw the elements on the right order.\n    \"\"\"\n    WIN.blit(BACKGROUND, (0, 0)) # background",
+        "detail": "run",
+        "documentation": {}
+    }
+]
