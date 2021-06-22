@@ -1,6 +1,6 @@
-venv
-*.pyc
-staticfiles
-.env
-db.sqlite3
-getting-started/*
+core.Microsoft*
+core.mongo*
+core.python*
+env.py
+__pycache__/
+*.py[cod]
