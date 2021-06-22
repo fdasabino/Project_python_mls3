@@ -110,30 +110,36 @@ No major issues were found with code.
 
 <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/checker2.jpg">
 
+
+
+## Deployment
+
+- The files have been published on a [Replit](https://replit.com/@fdasabino) IDE.
+
 ### Unfixed Bugs
+- I have commented out the code regarding the sound effects on lines 42, 43, 202, 210, 214, 217.
+The main reason being replit does not execute the pygame sound library.
+
+<img src="">
+<img src="">
+
 
 -   When I run the application in my IDE the following warning appears in my command line:
 
-1. [libpng warning: iCCP: known incorrect sRGB profile](https://www.google.com/search?q=libpng+warning%3A+iCCP%3A+known+incorrect+sRGB+profile&rlz=1C1CHBD_enSE943SE943&oq=libpng+warning%3A+iCCP%3A+known+incorrect+sRGB+profile&aqs=chrome.0.69i59.615j0j7&sourceid=chrome&ie=UTF-8)
+[libpng warning: iCCP: known incorrect sRGB profile](https://www.google.com/search?q=libpng+warning%3A+iCCP%3A+known+incorrect+sRGB+profile&rlz=1C1CHBD_enSE943SE943&oq=libpng+warning%3A+iCCP%3A+known+incorrect+sRGB+profile&aqs=chrome.0.69i59.615j0j7&sourceid=chrome&ie=UTF-8)
 
 -   When the application is stopped the following error is shown:
 
-2. [pygame.error: video system not initialized](https://www.google.com/search?q=pygame.error%3A+video+system+not+initialized&rlz=1C1CHBD_enSE943SE943&sxsrf=ALeKk00M-Mu0KMq8QHLnGLyoLmtNzf8Vbg%3A1624296425479&ei=6cvQYP7YHKWQrgTq8KCQCw&oq=pygame.error%3A+video+system+not+initialized&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyAggAMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeUIaiAliGogJgv6QCaABwAngAgAF2iAHsAZIBAzAuMpgBAKABAqABAaoBB2d3cy13aXrAAQE&sclient=gws-wiz&ved=0ahUKEwi-8czbn6nxAhUliIsKHWo4CLIQ4dUDCA4&uact=5)
+[pygame.error: video system not initialized](https://www.google.com/search?q=pygame.error%3A+video+system+not+initialized&rlz=1C1CHBD_enSE943SE943&sxsrf=ALeKk00M-Mu0KMq8QHLnGLyoLmtNzf8Vbg%3A1624296425479&ei=6cvQYP7YHKWQrgTq8KCQCw&oq=pygame.error%3A+video+system+not+initialized&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyAggAMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeUIaiAliGogJgv6QCaABwAngAgAF2iAHsAZIBAzAuMpgBAKABAqABAaoBB2d3cy13aXrAAQE&sclient=gws-wiz&ved=0ahUKEwi-8czbn6nxAhUliIsKHWo4CLIQ4dUDCA4&uact=5)
 
 None of the above stops the program from running and executing, which makes me believe that
 is a problem with some of pygame's libraries.
 
-## Deployment
-
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub)
-
-The site was deployed to GitHub pages. The steps to deploy are as follows:
-In the GitHub repository, navigate to the Settings tab
-From the source section drop-down menu, select the Master Branch
-Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html
-
 ## Credits
+
+### Libraries
+
+1. The project was developed using [Pygame]()
 
 ### Media
 
