@@ -114,7 +114,7 @@ No major issues were found with code.
 
 ## Deployment
 
-- The files have been published on a [Replit](https://replit.com/@fdasabino) IDE.
+- The files have been published on a [Replit](https://replit.com/@fdasabino/Projectpythonmls3?v=1) IDE.
 
 ### Unfixed Bugs
 1. I have commented out the code regarding the sound effects on lines 42, 43, 202, 210, 214, 217 on the [run.py](run.py) file.
