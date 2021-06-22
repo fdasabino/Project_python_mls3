@@ -58,6 +58,8 @@ Players can share the same keyboard in order to play a match.
 
 The error shown by the validator is located on the provided deployment files provided by the template owner.
 
+### Validator Testing
+
 The validator have shown some warnings with the code written, these warnings don't create any problems and were therefore ignored:
 
 -   E231:11:21:missing whitespace after ','
@@ -103,18 +105,16 @@ The validator have shown some warnings with the code written, these warnings don
 -   E303:200:9:too many blank lines (2)
 -   E501:205:80:line too long (93 > 79 characters)
 
-### Validator Testing
-
 The code for this program was tested using the [PEP8 - validator](Assets\Validating\PEP8.txt) and [Codeac - validator](https://app.codeac.io/github/fdasabino/Project_python_mls3).
 No major issues were found with code.
 
 <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/checker2.jpg">
 
-
-
 ## Deployment
 
-- The files have been published on a [Replit](https://replit.com/@fdasabino/Projectpythonmls3?v=1) IDE.
+- The program has been published on a [Replit](https://replit.com/@fdasabino/Projectpythonmls3?v=1) IDE.
+
+- You can also find the files on my [Github](https://github.com/fdasabino/Project_python_mls3) repository.
 
 ### Unfixed Bugs
 1. I have commented out the code regarding the sound effects on lines 42, 43, 202, 210, 214, 217 on the [run.py](run.py) file.
@@ -137,9 +137,15 @@ is a problem with some of pygame's libraries.
 
 ## Credits
 
-### Libraries
+### Modules
 
-1. The project was developed using [Pygame]()
+1. The project was developed using [Pygame](https://www.pygame.org/news)
+
+Pygame is a set of Python modules designed for writing video games. Pygame adds functionality
+on top of the excellent SDL library. This allows you to create fully featured games and multimedia programs in the python language.
+
+Pygame is free. Released under the LGPL licence, you can create open source,
+ freeware, shareware, and commercial games with it. See the licence for full details.
 
 ### Media
 
