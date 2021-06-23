@@ -2,26 +2,26 @@
 
 ## Project Goals
 
--   The main goal with this project is demonstrate the power of python programing language, and how simple it is to implement a
-    basic application concept.
+- The main goal with this project is demonstrate the power of python programing language, and how simple it is to implement a
+basic application concept.
 
--   Nasa vs Aliens is a game developed to bring back the nostalgia of the 80s and 90s 2d games. This application target is mostly
-    people that enjoy a good, light old fashioned game to pass the time or simply for the act of socializing.
+- Nasa vs Aliens is a game developed to bring back the nostalgia of the 80s and 90s 2d games. This application target is mostly
+people that enjoy a good, light old fashioned game to pass the time or simply for the act of socializing.
 
- <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/game_screen_shot%20-%20Copy.jpg">
+<img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/game_screen_shot%20-%20Copy.jpg">
 
 ## Features
 
 #### Existing Features
 
--   Health Status
+- Health Status
 
- <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/health_status.jpg">
+<img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/health_status.jpg">
 
 Visible through out each match, shows players the status of their ship. Each player has 10 life points,
 whenever a player reaches 0 the game is restarted.
 
-#### Two Player Game
+- Two Player Game
 
 Players can share the same keyboard in order to play a match.
 
@@ -33,7 +33,7 @@ Players can share the same keyboard in order to play a match.
 -   RIGHT --> D
 -   SHOOT --> SPACE-BAR
 
- <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/bullets.jpg">
+<img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/bullets.jpg">
 
 2. The right player uses the following keys:
 
@@ -45,9 +45,9 @@ Players can share the same keyboard in order to play a match.
 
 #### Winner Text
 
--   Each time the opposite side reaches 0 health the winner is announced.
+- Each time the opposite side reaches 0 health the winner is announced.
 
- <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/winner_text.jpg">
+<img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/winner_text.jpg">
 
 #### Features Left to Implement
 
@@ -113,7 +113,7 @@ Pygame is a set of Python modules designed for writing video games. Pygame adds 
 on top of the excellent SDL library. This allows you to create fully featured games and multimedia programs in the python language.
 
 Pygame is free. Released under the LGPL licence, you can create open source,
- freeware, shareware, and commercial games with it. See the licence for full details.
+freeware, shareware, and commercial games with it. See the licence for full details.
 
 ### Media
 
@@ -127,3 +127,5 @@ Pygame is free. Released under the LGPL licence, you can create open source,
 
 - A big thanks to Alan and the Student Support team for coming up with the deployment idea
 and of course for their time.
+
+- Thanks to Spencer my mentor for being so prompt and active when questions arise.
