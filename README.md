@@ -54,86 +54,54 @@ Players can share the same keyboard in order to play a match.
 1. In a near future I would like to implement a intro that presents the game.
 2. Add a menu that let players choose their game character.
 
-## Testing [![Codeac](https://static.codeac.io/badges/2-377614318.svg "Codeac")](https://app.codeac.io/github/fdasabino/Project_python_mls3)
+## Testing
 
-The error shown by the validator is located on the provided deployment files provided by the template owner.
+[![Codeac](https://static.codeac.io/badges/2-377614318.svg "Codeac")](https://app.codeac.io/github/fdasabino/Project_python_mls3)
 
 ### Validator Testing
 
-The validator have shown some warnings with the code written, these warnings don't create any problems and were therefore ignored:
+The code for this program was tested using the following:
 
--   E231:11:21:missing whitespace after ','
--   E231:52:61:missing whitespace after ','
--   E501:52:80:line too long (95 > 79 characters)
--   E501:57:80:line too long (97 > 79 characters)
--   E501:61:80:line too long (95 > 79 characters)
--   E231:61:87:missing whitespace after ','
--   E302:64:1:expected 2 blank lines, found 1
--   E501:64:80:line too long (90 > 79 characters)
--   E261:69:33:at least two spaces before inline comment
--   E501:71:80:line too long (96 > 79 characters)
--   E261:71:81:at least two spaces before inline comment
--   E501:72:80:line too long (96 > 79 characters)
--   E261:72:81:at least two spaces before inline comment
--   E225:74:71:missing whitespace around operator
--   E501:74:80:line too long (80 > 79 characters)
--   E261:75:47:at least two spaces before inline comment
--   E261:76:50:at least two spaces before inline comment
--   E302:87:1:expected 2 blank lines, found 1
--   E261:93:54:at least two spaces before inline comment
--   E261:95:74:at least two spaces before inline comment
--   E501:95:80:line too long (81 > 79 characters)
--   E261:97:54:at least two spaces before inline comment
--   E261:99:73:at least two spaces before inline comment
--   E302:103:1:expected 2 blank lines, found 1
--   E261:109:80:at least two spaces before inline comment
--   E501:109:80:line too long (86 > 79 characters)
--   E261:111:77:at least two spaces before inline comment
--   E501:111:80:line too long (84 > 79 characters)
--   E261:113:56:at least two spaces before inline comment
--   E501:115:80:line too long (89 > 79 characters)
--   E261:115:83:at least two spaces before inline comment
--   E302:119:1:expected 2 blank lines, found 1
--   E302:140:1:expected 2 blank lines, found 1
--   E501:145:80:line too long (100 > 79 characters)
--   E302:150:1:expected 2 blank lines, found 1
--   E501:173:80:line too long (83 > 79 characters)
--   E501:174:80:line too long (97 > 79 characters)
--   E501:178:80:line too long (84 > 79 characters)
--   E501:179:80:line too long (87 > 79 characters)
--   E222:192:26:multiple spaces after operator
--   E303:200:9:too many blank lines (2)
--   E501:205:80:line too long (93 > 79 characters)
+The [PEP8 - validator](http://pep8online.com/) validator have shown some warnings with the code written, these warnings don't create any problems and were therefore ignored:
 
-The code for this program was tested using the [PEP8 - validator](https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Validating/PEP8.txt) and [Codeac - validator](https://app.codeac.io/github/fdasabino/Project_python_mls3).
-No major issues were found with code.
+[PEP8 - Result File](https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Validating/PEP8.txt) containing the results and the code.
+
+
+[Codeac - validator](https://app.codeac.io/github/fdasabino/Project_python_mls3)
 
 <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/checker2.jpg">
 
+
 ## Deployment
 
-- The program has been published on a [Replit](https://replit.com/@fdasabino/Projectpythonmls3?v=1) IDE.
+- The program has been published on [Replit](https://replit.com/@fdasabino/Projectpythonmls3?v=1).
 
 - You can also find the files on my [Github](https://github.com/fdasabino/Project_python_mls3) repository.
 
-### Unfixed Bugs
-1. I have commented out the code regarding the sound effects on lines 42, 43, 202, 210, 214, 217 on the [run.py](run.py) file.
+## Unfixed Bugs
+
+1. ### First bug:
+
+I have commented out the code regarding the sound effects on lines 42, 43, 202, 210, 214, 217 on the [run.py](run.py) file on replit.
 The main reason being replit does not execute the pygame sound library.
 
 <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/commented_42%2C43.jpg">
 <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/commented_202%2C%20210%2C%20214%2C%20217.jpg">
 
+2. ### Second bug:
 
-2. When I run the application in my IDE the following warning appears in my command line:
+When the application executed the following error appears in my command line:
 
 [libpng warning: iCCP: known incorrect sRGB profile](https://www.google.com/search?q=libpng+warning%3A+iCCP%3A+known+incorrect+sRGB+profile&rlz=1C1CHBD_enSE943SE943&oq=libpng+warning%3A+iCCP%3A+known+incorrect+sRGB+profile&aqs=chrome.0.69i59.615j0j7&sourceid=chrome&ie=UTF-8)
 
-3. When the application is stopped the following error is shown:
+
+3. ### Third bug:
+
+When the application is stopped the following error appears in my command line:
 
 [pygame.error: video system not initialized](https://www.google.com/search?q=pygame.error%3A+video+system+not+initialized&rlz=1C1CHBD_enSE943SE943&sxsrf=ALeKk00M-Mu0KMq8QHLnGLyoLmtNzf8Vbg%3A1624296425479&ei=6cvQYP7YHKWQrgTq8KCQCw&oq=pygame.error%3A+video+system+not+initialized&gs_lcp=Cgdnd3Mtd2l6EAMyBAgjECcyAggAMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeUIaiAliGogJgv6QCaABwAngAgAF2iAHsAZIBAzAuMpgBAKABAqABAaoBB2d3cy13aXrAAQE&sclient=gws-wiz&ved=0ahUKEwi-8czbn6nxAhUliIsKHWo4CLIQ4dUDCA4&uact=5)
 
-None of the above stops the program from running and executing, which makes me believe that
-is a problem with some of pygame's libraries.
+None of the above stops the program from running and executing, which makes me believe that is a problem with some of the pygame libraries.
 
 ## Credits
 
