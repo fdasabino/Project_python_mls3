@@ -14,12 +14,14 @@ people that enjoy a good, light old fashioned game to pass the time or simply fo
 
 ### Existing Features
 
+
 #### Health Status
 
 <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/health_status.jpg">
 
 Visible through out each match, shows players the status of their ship. Each player has 10 life points,
 whenever a player reaches 0 the game is restarted.
+
 
 #### Two Player Game
 
@@ -43,20 +45,32 @@ Players can share the same keyboard in order to play a match.
 -   RIGHT --> ARROW RIGHT
 -   SHOOT --> RIGHT CTRL
 
+
+#### 5 Bullets Rule
+
+To make the game more exciting, players can only fire 5 bullets at the time. Players are not allowed to
+fire again until their bullets are either off the screen or have hit the enemy ship.
+
+<img src="">
+
+
 #### Winner Text
 
 Each time the opposite side reaches 0 health the winner is announced.
 
 <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/winner_text.jpg">
 
+
 #### Features Left to Implement
 
 1. In a near future I would like to implement a intro that presents the game.
 2. Add a menu that let players choose their game character.
 
+
 ## Testing
 
 [![Codeac](https://static.codeac.io/badges/2-377614318.svg "Codeac")](https://app.codeac.io/github/fdasabino/Project_python_mls3)
+
 
 ### Validator Testing
 
