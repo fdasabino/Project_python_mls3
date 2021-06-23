@@ -51,7 +51,7 @@ Players can share the same keyboard in order to play a match.
 To make the game more exciting, players can only fire 5 bullets at the time. Players are not allowed to
 fire again until their bullets are either off the screen or have hit the enemy ship.
 
-<img src="">
+<img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/5bullets_at_the_time.jpg">
 
 
 #### Winner Text
