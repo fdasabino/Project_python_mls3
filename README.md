@@ -12,16 +12,16 @@ people that enjoy a good, light old fashioned game to pass the time or simply fo
 
 ## Features
 
-#### Existing Features
+### Existing Features
 
-- Health Status
+#### Health Status
 
 <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/health_status.jpg">
 
 Visible through out each match, shows players the status of their ship. Each player has 10 life points,
 whenever a player reaches 0 the game is restarted.
 
-- Two Player Game
+#### Two Player Game
 
 Players can share the same keyboard in order to play a match.
 
@@ -45,7 +45,7 @@ Players can share the same keyboard in order to play a match.
 
 #### Winner Text
 
-- Each time the opposite side reaches 0 health the winner is announced.
+Each time the opposite side reaches 0 health the winner is announced.
 
 <img src="https://github.com/fdasabino/Project_python_mls3/blob/main/Assets/Screenshots/winner_text.jpg">
 
